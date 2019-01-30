@@ -1,0 +1,136 @@
+:root {
+  --bg-color: #fefefe;
+  --text-color: #695d54;
+  --h1-color: #c29c44;
+  --h3-color: #723e30;
+  --link-color: #aa6e54;
+  --hover-color: #5d3f33;
+  --header-color: #bfa44d;
+  --header-text: #fefefe;
+  --button-color: #b48336;
+}
+H1,
+H2 {
+  text-align: center;
+}
+H3 {
+  display: inline-block;
+  color: var(--h3-color);
+  margin: 0;
+}
+BUTTON {
+  all: unset;
+  padding: 0.8rem;
+  text-transform: uppercase;
+  background: var(--button-color);
+  color: var(--bg-color);
+  border-radius: 3px;
+  transition-duration: 0.4s;
+}
+BUTTON:hover {
+  background: var(--hover-color);
+  cursor: pointer;
+}
+A {
+  color: var(--link-color);
+}
+A:hover {
+  color: var(--hover-color);
+}
+ADDRESS {
+}
+BODY {
+  font-family: "Lato";
+  color: var(--text-color);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+P2 {
+  display: block;
+}
+.header {
+  width: 100%;
+  background-color: grey;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  background: var(--header-color);
+  color: var(--header-text);
+}
+.header span {
+  flex: 1 1 0;
+  text-align: center;
+}
+.header ul {
+  flex: 1 1 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+.header li {
+  list-style: none;
+  display: inline;
+  padding-right: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.header li:hover{
+  color: var(--hover-color);
+}
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#about .text {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+#about DIV {
+  flex: 1 1 0;
+}
+#about img {
+  max-width: 100%;
+}
+#menu ul {
+  list-style: none;
+  flex: 1 1 0;
+  background-image: url("");
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+#menu ul ul {
+  list-style: circle;
+  padding-right: 0;
+}
+#menu ul li {
+  margin-bottom: 1em;
+}
+#menu ul ul li {
+  margin-bottom: 0;
+}
+#menu ul span {
+  float: right;
+}
+#menu .buttons {
+  text-align: center;
+}
+#hours-location {
+  display: flex;
+}
+#hours-location .hours,
+.location {
+  flex: 1 1 0;
+  padding: 2rem;
+}
+#hours-location .location {
+  text-align: center;
+}
+#contact {
+  text-align: center;
+}
+.menu-flex {
+  display: flex;
+}
