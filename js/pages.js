@@ -1,6 +1,6 @@
-//remove contact us and put info at the bottom of every page
-//add tabs for menus
-//add fade effect for nav links and
+//make footer sit at the bottom of the page
+//clean up the menus
+//finish typing the menus
 $(document).ready(function(){
 
   // make about seem active & others not

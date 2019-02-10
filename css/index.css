@@ -105,6 +105,14 @@ margin-right: auto;
 .menu-flex {
   display: flex;
 }
+#about #notice{
+  color: red;
+  font-weight: bold;
+  display: block;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
 #menu ul {
   list-style: none;
   flex: 1 1 0;
