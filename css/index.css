@@ -89,17 +89,17 @@ P2 {
   padding-right: 8rem;
 }
 #about DIV {
-  flex: 1 1 0;
+  /* flex: 1 1 0; */
 }
-#about img {
+#about IMG {
   max-width: 100%;
 }
 #menu ul {
   list-style: none;
   flex: 1 1 0;
   background-image: url("");
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 #menu ul ul {
   list-style: circle;
@@ -133,4 +133,21 @@ P2 {
 }
 .menu-flex {
   display: flex;
+}
+.footer{
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  background: var(--header-color);
+  color: var(--header-text);
+}
+
+.footer I{
+  padding: 0.25em;
+  font-size: 2em;
+  cursor: pointer;
+  color: var(--header-text);
 }
