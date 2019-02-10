@@ -17,7 +17,7 @@ $(document).ready(function(){
       .attr("id")
       .replace(/-btn/g, "");
     $(".menu").css("display", "none");
-    $("#" + menuName).css("display", "");
+    $("#" + menuName).fadeIn(300).css("display", "");
   });
 
     //display pages
@@ -28,7 +28,6 @@ $(document).ready(function(){
     $(".nav li").css("text-decoration", "");
     $(this).css("text-decoration", "underline");
     $(".tab").css("display", "none");
-
     $("#" + tabName).fadeIn(500).css("display", "");
   });
 });
