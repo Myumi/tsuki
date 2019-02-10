@@ -89,21 +89,31 @@ P2 {
   padding-right: 8rem;
 }
 #about DIV {
-  /* flex: 1 1 0; */
+  flex: 1 1 0;
 }
 #about IMG {
-  max-width: 100%;
+  height: 100%;
+}
+#about BUTTON{
+  display: block;
+margin-left: auto;
+margin-right: auto;
+}
+#about BUTTON A{
+  text-decoration: none;
+}
+.menu-flex {
+  display: flex;
 }
 #menu ul {
   list-style: none;
   flex: 1 1 0;
-  background-image: url("");
   padding-left: 3rem;
   padding-right: 3rem;
 }
 #menu ul ul {
   list-style: circle;
-  padding-right: 0;
+  padding: 0;
 }
 #menu ul li {
   margin-bottom: 1em;
@@ -130,9 +140,6 @@ P2 {
 }
 #contact {
   text-align: center;
-}
-.menu-flex {
-  display: flex;
 }
 .footer{
   width: 100%;
