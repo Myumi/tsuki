@@ -28,6 +28,7 @@ $(document).ready(function(){
     $(".nav li").css("text-decoration", "");
     $(this).css("text-decoration", "underline");
     $(".tab").css("display", "none");
-    $("#" + tabName).css("display", "");
+
+    $("#" + tabName).fadeIn(500).css("display", "");
   });
 });
