@@ -45,6 +45,7 @@ BODY {
   height: 100%;
   width: 100%;
   margin: 0;
+  overflow-x: hidden;
 }
 P2 {
   display: block;
@@ -52,7 +53,7 @@ P2 {
 #container{
   min-height: 100%;
     position:relative;
-padding-bottom: 50px;
+padding-bottom: 0px;
 }
 .header {
   width: 100%;
@@ -84,20 +85,33 @@ padding-bottom: 50px;
 .header li:hover{
   color: var(--hover-color);
 }
+.center{
+  text-align: center;
+}
 #about {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-#about .text {
-  padding-left: 8rem;
-  padding-right: 8rem;
+  justify-content: space-between;
+  flex-direction: row;
+  min-height: 100%;
 }
 #about DIV {
   flex: 1 1 0;
 }
-#about IMG {
+#about .text {
+  padding-left: 10%;
+  padding-right: 10%;
+  max-padding-left: 5rem;
+  max-padding-right: 5rem;
+}
+#about .text P{
+  margin-bottom: 1rem;
+}
+#about .image, IMG{
+  /* background-image: url(http://www.vitacraft.co.jp/recipe/season/spring/2013/images/photo_03.jpg);
+  background-repeat:no-repeat; */
   height: 100%;
+  width: 100%;
 }
 #about BUTTON{
   display: block;
@@ -116,7 +130,6 @@ margin-right: auto;
   display: block;
 margin-left: auto;
 margin-right: auto;
-text-align: center;
 }
 #menu ul {
   list-style: none;
@@ -139,6 +152,7 @@ text-align: center;
 }
 #menu .buttons {
   text-align: center;
+  padding-bottom: 1rem;
 }
 #hours-location {
   display: flex;
@@ -154,21 +168,25 @@ text-align: center;
 #contact {
   text-align: center;
 }
-.footer{
+#footer{
   width: 100%;
   padding: 1rem;
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  text-align: center;
   align-items: baseline;
   justify-content: center;
   background: var(--header-color);
   color: var(--header-text);
 }
 
-.footer I{
+#footer I{
   padding: 0.25em;
   font-size: 2em;
   cursor: pointer;
   color: var(--header-text);
   height: 50px;
+}
+#footer #icons, P{
+  margin: 0;
+  padding: 0;
 }

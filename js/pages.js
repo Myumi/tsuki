@@ -1,12 +1,18 @@
-//make footer sit at the bottom of the page
 //clean up the menus
 //finish typing the menus
+//have address open up gogle maps
+//fix image
+//fix bullet points
+//see if you can make columns in HTML
 $(document).ready(function(){
 
   // make about seem active & others not
   $("#about-tab").css("text-decoration", "underline");
   $(".tab").css("display", "none");
   $("#about").css("display", "");
+
+  //make menus invisible
+  $(".menu").css("display", "none");
 
     //display menus
   $("#menu button").click(function() {
