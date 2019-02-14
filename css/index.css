@@ -138,8 +138,9 @@ margin-right: auto;
   padding-right: 3rem;
 }
 #menu ul ul {
-  list-style: circle;
+  list-style: initial;
   padding: 0;
+  padding-left: 1.5rem;
 }
 #menu ul li {
   margin-bottom: 1em;
@@ -154,16 +155,12 @@ margin-right: auto;
   text-align: center;
   padding-bottom: 1rem;
 }
-#hours-location {
+#hours {
   display: flex;
 }
-#hours-location .hours,
-.location {
+#hours .hours {
   flex: 1 1 0;
   padding: 2rem;
-}
-#hours-location .location {
-  text-align: center;
 }
 #contact {
   text-align: center;

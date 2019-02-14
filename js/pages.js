@@ -1,9 +1,8 @@
 //clean up the menus
 //finish typing the menus
 //have address open up gogle maps
-//fix image
-//fix bullet points
-//see if you can make columns in HTML
+//set active menu based on time
+//put hours under order online button
 $(document).ready(function(){
 
   // make about seem active & others not
@@ -13,6 +12,7 @@ $(document).ready(function(){
 
   //make menus invisible
   $(".menu").css("display", "none");
+
 
     //display menus
   $("#menu button").click(function() {
