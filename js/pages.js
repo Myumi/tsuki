@@ -3,12 +3,21 @@
 //have address open up gogle maps
 //set active menu based on time
 //put hours under order online button
+//get out of jquery
 $(document).ready(function(){
-
-  // make about seem active & others not
-  $("#about-tab").css("text-decoration", "underline");
+  document.getElementById("menu-tab").addEventListener("click", function(){
+    let d = new Date()
+    if(d.getDay() == 0 || d.getHours() < 14){
+      document.getElementById("lunch-btn").click()
+    }
+    else{
+      document.getElementById("dinner-btn").click()
+    }
+  });
+  // make home seem active & others not
+  $("#home-tab").css("text-decoration", "underline");
   $(".tab").css("display", "none");
-  $("#about").css("display", "");
+  $("#home").css("display", "");
 
   //make menus invisible
   $(".menu").css("display", "none");

@@ -88,43 +88,43 @@ padding-bottom: 0px;
 .center{
   text-align: center;
 }
-#about {
+#home {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   min-height: 100%;
 }
-#about DIV {
+#home DIV {
   flex: 1 1 0;
 }
-#about .text {
+#home .text {
   padding-left: 10%;
   padding-right: 10%;
   max-padding-left: 5rem;
   max-padding-right: 5rem;
 }
-#about .text P{
+#home .text P{
   margin-bottom: 1rem;
 }
-#about .image, IMG{
+#home .image, IMG{
   /* background-image: url(http://www.vitacraft.co.jp/recipe/season/spring/2013/images/photo_03.jpg);
   background-repeat:no-repeat; */
   height: 100%;
   width: 100%;
 }
-#about BUTTON{
+#home BUTTON{
   display: block;
 margin-left: auto;
 margin-right: auto;
 }
-#about BUTTON A{
+#home BUTTON A{
   text-decoration: none;
 }
 .menu-flex {
   display: flex;
 }
-#about #notice{
+#home #notice{
   color: red;
   font-weight: bold;
   display: block;
