@@ -156,7 +156,7 @@
  .menu-flex {
      display: flex;
 }
- #menu ul {
+ /* #menu ul {
      list-style: none;
      flex: 1 1 0;
      padding-left: 3rem;
@@ -175,6 +175,26 @@
 }
  #menu ul span {
      float: right;
+} */
+.menu-flex ul {
+    list-style: none;
+    flex: 1 1 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.menu-flex ul ul {
+    list-style: initial;
+    padding: 0;
+    padding-left: 1.5rem;
+}
+.menu-flex ul li {
+    margin-bottom: 1em;
+}
+.menu-flex ul ul li {
+    margin-bottom: 0;
+}
+.menu-flex ul span {
+    float: right;
 }
  #hours {
      display: flex;
