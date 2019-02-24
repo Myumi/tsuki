@@ -1,21 +1,13 @@
 //clean up the menus
 //finish typing the menus
-//have address open up gogle maps
-//set active menu based on time
-//put hours under order online button
 //get out of jquery
+//fix tab padding on right side of header
+//figure something out for the P on the lunch menu
+//fix image streching for banners and main page
+//figure something out for hours
 $(document).ready(function(){
-  document.getElementById("menu-tab").addEventListener("click", function(){
-    let d = new Date()
-    if(d.getDay() == 0 || d.getHours() < 14){
-      document.getElementById("lunch-btn").click()
-    }
-    else{
-      document.getElementById("dinner-btn").click()
-    }
-  });
   // make home seem active & others not
-  $("#home-tab").css("text-decoration", "underline");
+  $("#home-tab").addClass("active");
   $(".tab").css("display", "none");
   $("#home").css("display", "");
 
@@ -40,9 +32,10 @@ $(document).ready(function(){
     let tabName = $(this)
       .attr("id")
       .replace(/-tab/g, "");
-    $(".nav li").css("text-decoration", "");
-    $(this).css("text-decoration", "underline");
+    $(".nav li").removeClass("active");
+    $(this).addClass("active");
     $(".tab").css("display", "none");
     $("#" + tabName).fadeIn(500).css("display", "");
+    console.log(tabName)
   });
 });

@@ -1,196 +1,218 @@
 :root {
-  --bg-color: #fefefe;
-  --text-color: #695d54;
-  --h1-color: #c29c44;
-  --h3-color: #723e30;
-  --link-color: #aa6e54;
-  --hover-color: #5d3f33;
-  --header-color: #bfa44d;
-  --header-text: #fefefe;
-  --button-color: #b48336;
+     --bg-color: #fefefe;
+     --text-color: #695d54;
+     --h1-color: #c29c44;
+     --h3-color: #723e30;
+     --link-color: #aa6e54;
+     --hover-color: #5d3f33;
+     --header-color: #bfa44d;
+     --header-text: #fefefe;
+     --button-color: #b48336;
 }
-H1,
-H2 {
-  text-align: center;
+ H1, H2 {
+     text-align: center;
+     margin: 0;
+     font-size: 5rem;
+     font-family: 'Amatic SC';
 }
-H3 {
-  display: inline-block;
-  color: var(--h3-color);
-  margin: 0;
+ H3 {
+     display: inline-block;
+     color: var(--h3-color);
+     margin: 0;
 }
-BUTTON {
-  all: unset;
-  padding: 0.8rem;
-  text-transform: uppercase;
-  background: var(--button-color);
-  color: var(--bg-color);
-  border-radius: 3px;
-  transition-duration: 0.4s;
+ BUTTON {
+     all: unset;
+     padding: 0.8rem;
+     text-transform: uppercase;
+     background: var(--button-color);
+     color: var(--bg-color);
+     border-radius: 3px;
+     transition-duration: 0.4s;
 }
-BUTTON:hover {
-  background: var(--hover-color);
-  cursor: pointer;
+ BUTTON:hover {
+     background: var(--hover-color);
+     cursor: pointer;
 }
-A {
-  color: var(--link-color);
-  text-decoration:none;
+ A {
+     color: var(--link-color);
+     text-decoration:none;
 }
-A:hover {
+ A:hover {
+     color: var(--hover-color);
+}
+ BODY {
+     font-family: "Lato";
+     color: var(--text-color);
+     height: 100%;
+     width: 100%;
+     margin: 0;
+     overflow-x: hidden;
+}
+ P2 {
+     display: block;
+}
+ #container{
+     min-height: 100%;
+     position:relative;
+     padding-bottom: 0px;
+}
+.active {
   color: var(--hover-color);
 }
-ADDRESS {
+ .header {
+     width: 100%;
+     background-color: grey;
+     padding: 0.25rem;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     align-items: baseline;
+     background: var(--header-color);
+     color: var(--header-text);
 }
-BODY {
-  font-family: "Lato";
-  color: var(--text-color);
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  overflow-x: hidden;
+ .header span {
+     flex: 1 1 0;
+     text-align: center;
+     font-family: 'Playfair Display';
 }
-P2 {
-  display: block;
+ .header ul {
+     flex: 1 1 0;
+     text-transform: uppercase;
+     text-align: center;
 }
-#container{
-  min-height: 100%;
-    position:relative;
-padding-bottom: 0px;
+ .header li {
+     list-style: none;
+     display: inline;
+     padding-right: 1rem;
+     cursor: pointer;
+     transition: 0.4s;
 }
-.header {
-  width: 100%;
-  background-color: grey;
-  padding: 0.25rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: baseline;
-  background: var(--header-color);
-  color: var(--header-text);
+ .header li:hover{
+     color: var(--hover-color);
 }
-.header span {
-  flex: 1 1 0;
-  text-align: center;
+ .center{
+     text-align: center;
 }
-.header ul {
-  flex: 1 1 0;
-  text-transform: uppercase;
-  text-align: center;
+ #home {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-direction: row;
+     min-height: 100%;
 }
-.header li {
-  list-style: none;
-  display: inline;
-  padding-right: 1rem;
-  cursor: pointer;
-  transition: 0.4s;
+ #home DIV {
+     flex: 1 1 0;
 }
-.header li:hover{
-  color: var(--hover-color);
+ #home .text {
+     padding-left: 10%;
+     padding-right: 10%;
+     max-padding-left: 5rem;
+     max-padding-right: 5rem;
 }
-.center{
-  text-align: center;
+ #home .text P{
+     margin-bottom: 1rem;
 }
-#home {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-  min-height: 100%;
+ #home .image, IMG{
+     height: 100%;
+     width: 100%;
 }
-#home DIV {
-  flex: 1 1 0;
+ #home BUTTON{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
 }
-#home .text {
-  padding-left: 10%;
-  padding-right: 10%;
-  max-padding-left: 5rem;
-  max-padding-right: 5rem;
+ #home BUTTON A{
+     text-decoration: none;
 }
-#home .text P{
-  margin-bottom: 1rem;
+ #home #notice{
+     color: red;
+     font-weight: bold;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
 }
-#home .image, IMG{
-  /* background-image: url(http://www.vitacraft.co.jp/recipe/season/spring/2013/images/photo_03.jpg);
-  background-repeat:no-repeat; */
-  height: 100%;
-  width: 100%;
+ .banner{
+     width: 100%;
+     background-image: url("/Users/myumi/Projects/Static Websites/tsuki/banner1.jpg");
+     background-repeat: repeat;
+     padding-top: 4rem;
+     padding-bottom: 4rem;
+     min-height: 180px;
+     max-height: 180px;
+     color:var(--bg-color);
 }
-#home BUTTON{
-  display: block;
-margin-left: auto;
-margin-right: auto;
+ .banner H1{
+     padding-bottom: 1rem;
+     font-family: 'Permanent Marker';
+     font-size: 4.5rem;
 }
-#home BUTTON A{
-  text-decoration: none;
+ .banner .buttons {
+    text-align: center;
+    padding-bottom: 1rem;
 }
-.menu-flex {
-  display: flex;
+  .banner P{
+    font-size: 1.2rem;
+  }
+ .menu-flex {
+     display: flex;
 }
-#home #notice{
-  color: red;
-  font-weight: bold;
-  display: block;
-margin-left: auto;
-margin-right: auto;
+ #menu ul {
+     list-style: none;
+     flex: 1 1 0;
+     padding-left: 3rem;
+     padding-right: 3rem;
 }
-#menu ul {
-  list-style: none;
-  flex: 1 1 0;
-  padding-left: 3rem;
-  padding-right: 3rem;
+ #menu ul ul {
+     list-style: initial;
+     padding: 0;
+     padding-left: 1.5rem;
 }
-#menu ul ul {
-  list-style: initial;
-  padding: 0;
-  padding-left: 1.5rem;
+ #menu ul li {
+     margin-bottom: 1em;
 }
-#menu ul li {
-  margin-bottom: 1em;
+ #menu ul ul li {
+     margin-bottom: 0;
 }
-#menu ul ul li {
-  margin-bottom: 0;
+ #menu ul span {
+     float: right;
 }
-#menu ul span {
-  float: right;
+ #hours {
+     display: flex;
 }
-#menu .buttons {
-  text-align: center;
-  padding-bottom: 1rem;
+ #hours .hours {
+     flex: 1 1 0;
+     padding: 2rem;
 }
-#hours {
-  display: flex;
+ #contact {
+     text-align: center;
 }
-#hours .hours {
-  flex: 1 1 0;
-  padding: 2rem;
+ #footer{
+     width: 100%;
+     padding: 1rem;
+    /* display: flex;
+     */
+     text-align: center;
+     align-items: baseline;
+     justify-content: center;
+     background: var(--header-color);
+     color: var(--header-text);
 }
-#contact {
-  text-align: center;
+ #footer A{
+     color: var(--header-text);
+     transition: 0.4s;
 }
-#footer{
-  width: 100%;
-  padding: 1rem;
-  /* display: flex; */
-  text-align: center;
-  align-items: baseline;
-  justify-content: center;
-  background: var(--header-color);
-  color: var(--header-text);
+ #footer I{
+     padding: 0.25em;
+     font-size: 2em;
+     cursor: pointer;
+     color: var(--header-text);
+    /* height: 30px;
+     */
 }
-#footer A{
-  color: var(--header-text);
-  transition: 0.4s;
+ #footer A:hover, I:hover{
+     color: var(--hover-color);
 }
-#footer I{
-  padding: 0.25em;
-  font-size: 2em;
-  cursor: pointer;
-  color: var(--header-text);
-  /* height: 30px; */
-}
-#footer A:hover, I:hover{
-  color: var(--hover-color);
-}
-#footer #icons, P{
-  margin: 0;
-  padding: 0;
+ #footer #icons, P{
+     margin: 0;
+     padding: 0;
 }

@@ -6,8 +6,7 @@
   <meta name="Description" content="Experience traditional Japanese dining in a beautiful, authentic Japanese restaurant located in Bernardsville, New Jersey. We encourage you to try one or all of our unique delicious rolls. We are positive you will enjoy them!">
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/index.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Lato|Amatic+SC|Permanent+Marker|Playfair+Display" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/pages.js"></script>
@@ -19,7 +18,8 @@
     <span>Tsuki: Japanese Resturant</span>
     <ul class="nav">
       <li id="home-tab">Home</li>
-      <li id='menu-tab'>Menu</li>
+      <li id='lunch-tab'>Lunch</li>
+      <li id='dinner-tab'>Dinner</li>
       <li id="hours-tab">Hours</li>
     </ul>
   </div>
@@ -39,15 +39,13 @@
       </div>
     </div>
 
-    <div class="tab" id="menu">
-      <h1>Menu</h1>
-      <div class="buttons">
-        <button id="lunch-btn">Lunch</button>
-        <button id="dinner-btn">Dinner</button>
-        <button id="chefs-btn">Chef's Specials</button></div>
+    <div class="tab" id="lunch">
+      <div class="banner">
+      <h1>Lunch Menu</h1>
+      <p class="center">Served with soup, salad, and/or rice</p>
+      <p class="center"><b>All substitutes will receive an extra charge.</b></p>
+      </div>
       <div class="menu" id="lunch">
-        <p class="center">Served with soup, salad, and/or rice</p>
-        <p class="center"><b>All substitutes will receive an extra charge.</b></p>
         <div class="menu-flex">
           <ul>
             <li>
@@ -174,9 +172,17 @@
             </li>
           </ul>
         </div></div>
-        <div class="menu" id="dinner">dinner</div>
-        <div class="menu" id="chefs">chefs</div>
       </div>
+
+      <div class="tab" id="dinner">
+        <div class="banner">
+        <h1>Dinner Menu</h1>
+        <div class="buttons">
+          <button id="lunch-btn">Appetizers</button>
+          <button id="dinner-btn">Entrees</button>
+          <button id="chefs-btn">Chef's Specials</button></div>
+        </div>
+        </div>
 
       <div class="tab" id="hours">
         <div class="hours">
