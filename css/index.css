@@ -33,6 +33,7 @@ BUTTON:hover {
 }
 A {
   color: var(--link-color);
+  text-decoration:none;
 }
 A:hover {
   color: var(--hover-color);
@@ -58,7 +59,7 @@ padding-bottom: 0px;
 .header {
   width: 100%;
   background-color: grey;
-  padding: 1rem;
+  padding: 0.25rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -175,13 +176,19 @@ margin-right: auto;
   background: var(--header-color);
   color: var(--header-text);
 }
-
+#footer A{
+  color: var(--header-text);
+  transition: 0.4s;
+}
 #footer I{
   padding: 0.25em;
   font-size: 2em;
   cursor: pointer;
   color: var(--header-text);
-  height: 50px;
+  /* height: 30px; */
+}
+#footer A:hover, I:hover{
+  color: var(--hover-color);
 }
 #footer #icons, P{
   margin: 0;
