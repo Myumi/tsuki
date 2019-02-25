@@ -113,9 +113,13 @@
  #home .text P{
      margin-bottom: 1rem;
 }
- #home .image, IMG{
+ #home .image{
      height: 100%;
      width: 100%;
+}
+#home .image{
+  background-image: url("http://www.vitacraft.co.jp/recipe/season/spring/2013/images/photo_03.jpg");
+  background-size: cover;
 }
  #home BUTTON{
      display: block;
@@ -134,13 +138,20 @@
 }
  .banner{
      width: 100%;
-     background-image: url("/Users/myumi/Projects/Static Websites/tsuki/banner1.jpg");
-     background-repeat: repeat;
      padding-top: 4rem;
      padding-bottom: 4rem;
      min-height: 180px;
      max-height: 180px;
      color:var(--bg-color);
+}
+#lunch .banner {
+  background-image: url("/Users/myumi/Projects/Static Websites/tsuki/banner2.jpg");
+  background-size: cover;
+
+}
+#dinner .banner{
+  background-image: url("/Users/myumi/Projects/Static Websites/tsuki/banner1.jpg");
+  background-size: cover;
 }
  .banner H1{
      padding-bottom: 1rem;
@@ -157,26 +168,10 @@
  .menu-flex {
      display: flex;
 }
- /* #menu ul {
-     list-style: none;
-     flex: 1 1 0;
-     padding-left: 3rem;
-     padding-right: 3rem;
+#lunch .menu-flex{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
- #menu ul ul {
-     list-style: initial;
-     padding: 0;
-     padding-left: 1.5rem;
-}
- #menu ul li {
-     margin-bottom: 1em;
-}
- #menu ul ul li {
-     margin-bottom: 0;
-}
- #menu ul span {
-     float: right;
-} */
 .menu-flex ul {
     list-style: none;
     flex: 1 1 0;
@@ -196,6 +191,9 @@
 }
 .menu-flex ul span {
     float: right;
+}
+#dinner H2{
+  font-size: 3.5em;
 }
  #hours {
      display: flex;

@@ -14,18 +14,20 @@ $(document).ready(function(){
   //make menus invisible
   $(".menu").css("display", "none");
 
-
     //display menus
-  $("#menu button").click(function() {
-    $("#menu button").css("background", "var(--button-color)");
+  $("#dinner button").click(function() {
+    $("#dinner button").css("background", "var(--button-color)");
     let button = $(this);
     button.css("background", "var(--hover-color)");
     let menuName = $(this)
       .attr("id")
       .replace(/-btn/g, "");
-    $(".menu").css("display", "none");
+    $("#dinner .menu-flex").css("display", "none");
     $("#" + menuName).fadeIn(300).css("display", "");
   });
+
+  //set appetizer button as default clicked
+  $("#appetizer-btn").click();
 
     //display pages
   $(".nav li").click(function() {
@@ -36,6 +38,5 @@ $(document).ready(function(){
     $(this).addClass("active");
     $(".tab").css("display", "none");
     $("#" + tabName).fadeIn(500).css("display", "");
-    console.log(tabName)
   });
 });
