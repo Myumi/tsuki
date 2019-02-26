@@ -2,8 +2,6 @@
 //finish typing the menus
 //get out of jquery
 //fix tab padding on right side of header
-//figure something out for the P on the lunch menu
-//fix image streching for banners and main page
 //figure something out for hours
 $(document).ready(function(){
   // make home seem active & others not

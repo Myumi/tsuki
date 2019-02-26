@@ -166,7 +166,8 @@
     font-size: 1.2rem;
   }
  .menu-flex {
-     display: flex;
+     columns: 2 400px;
+     padding-bottom: 2rem;
 }
 #lunch .menu-flex{
   padding-top: 1.5rem;
@@ -185,9 +186,19 @@
 }
 .menu-flex ul li {
     margin-bottom: 1em;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside:avoid;
+    -moz-page-break-inside:avoid;
+    page-break-inside: avoid;
+    break-inside: avoid-column;
 }
 .menu-flex ul ul li {
     margin-bottom: 0;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside:avoid;
+    -moz-page-break-inside:avoid;
+    page-break-inside: avoid;
+    break-inside: avoid-column;
 }
 .menu-flex ul span {
     float: right;
@@ -195,12 +206,29 @@
 #dinner H2{
   font-size: 3.5em;
 }
+#hours H1{
+  font-size: 3.5rem;
+}
  #hours {
      display: flex;
 }
  #hours .hours {
      flex: 1 1 0;
-     padding: 2rem;
+     padding: 5rem;
+     margin: auto;
+}
+#hours ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#hours li{
+    padding-top: 2rem;
+    font-style: italic;
+}
+#hours ul span{
+  float: right;
+  font-style: normal;
 }
  #contact {
      text-align: center;
