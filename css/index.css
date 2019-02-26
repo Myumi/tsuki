@@ -1,265 +1,292 @@
 :root {
-     --bg-color: #fefefe;
-     --text-color: #695d54;
-     --h1-color: #c29c44;
-     --h3-color: #723e30;
-     --link-color: #aa6e54;
-     --hover-color: #5d3f33;
-     --header-color: #bfa44d;
-     --header-text: #fefefe;
-     --button-color: #b48336;
+--bg-color:#fefefe;
+--button-color:#b48336;
+--h1-color:#c29c44;
+--h3-color:#723e30;
+--header-color:#bfa44d;
+--header-text:#fefefe;
+--hover-color:#5d3f33;
+--link-color:#aa6e54;
+--text-color:#695d54;
 }
- H1, H2 {
-     text-align: center;
-     margin: 0;
-     font-size: 5rem;
-     font-family: 'Amatic SC';
-}
- H3 {
-     display: inline-block;
-     color: var(--h3-color);
-     margin: 0;
-     font-family: "Playfair Display";
-}
- BUTTON {
-     all: unset;
-     padding: 0.8rem;
-     text-transform: uppercase;
-     background: var(--button-color);
-     color: var(--bg-color);
-     border-radius: 3px;
-     transition-duration: 0.4s;
-}
- BUTTON:hover {
-     background: var(--hover-color);
-     cursor: pointer;
-}
- A {
-     color: var(--link-color);
-     text-decoration:none;
-}
- A:hover {
-     color: var(--hover-color);
-}
- BODY {
-     font-family: "Lato";
-     color: var(--text-color);
-     height: 100%;
-     width: 100%;
-     margin: 0;
-     overflow-x: hidden;
-}
- P2 {
-     display: block;
-}
- #container{
-     min-height: 100%;
-     position:relative;
-     padding-bottom: 0px;
-}
-.active {
-  color: var(--hover-color);
-}
- .header {
-     width: 100%;
-     background-color: grey;
-     padding: 0.25rem;
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     align-items: baseline;
-     background: var(--header-color);
-     color: var(--header-text);
-}
- .header span {
-     flex: 1 1 0;
-     text-align: center;
-     font-family: 'Playfair Display';
-}
- .header ul {
-     flex: 1 1 0;
-     text-transform: uppercase;
-     text-align: center;
-}
- .header li {
-     list-style: none;
-     display: inline;
-     padding-right: 1rem;
-     cursor: pointer;
-     transition: 0.4s;
-}
- .header li:hover{
-     color: var(--hover-color);
-}
- .center{
-     text-align: center;
-}
- #home {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     flex-direction: row;
-     min-height: 100%;
-}
- #home DIV {
-     flex: 1 1 0;
-}
- #home .text {
-     padding-left: 10%;
-     padding-right: 10%;
-     max-padding-left: 5rem;
-     max-padding-right: 5rem;
-}
- #home .text P{
-     margin-bottom: 1rem;
-}
- #home .image{
-     height: 100%;
-     width: 100%;
-}
-#home .image{
-  background-image: url("http://www.vitacraft.co.jp/recipe/season/spring/2013/images/photo_03.jpg");
-  background-size: cover;
-}
- #home BUTTON{
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-}
- #home BUTTON A{
-     text-decoration: none;
-}
- #home #notice{
-     color: red;
-     font-weight: bold;
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-}
- .banner{
-     width: 100%;
-     padding-top: 4rem;
-     padding-bottom: 4rem;
-     min-height: 180px;
-     max-height: 180px;
-     color:var(--bg-color);
-}
-#lunch .banner {
-  background-image: url("/Users/myumi/Projects/Static Websites/tsuki/banner2.jpg");
-  background-size: cover;
 
+h1,h2 {
+font-family:'Amatic SC';
+font-size:5rem;
+margin:0;
+text-align:center;
 }
-#dinner .banner{
-  background-image: url("/Users/myumi/Projects/Static Websites/tsuki/banner1.jpg");
-  background-size: cover;
+
+h3 {
+color:var(--h3-color);
+display:inline-block;
+font-family:"Playfair Display";
+margin:0;
 }
- .banner H1{
-     padding-bottom: 1rem;
-     font-family: 'Permanent Marker';
-     font-size: 4.5rem;
+
+button {
+all:unset;
+background:var(--button-color);
+border-radius:3px;
+color:var(--bg-color);
+padding:.8rem;
+text-transform:uppercase;
+transition-duration:.4s;
 }
- .banner .buttons {
-    text-align: center;
-    padding-bottom: 1rem;
+
+button:hover {
+background:var(--hover-color);
+cursor:pointer;
 }
-  .banner P{
-    font-size: 1.2rem;
-  }
- .menu-flex {
-     columns: 2 400px;
-     padding-bottom: 2rem;
+
+a {
+color:var(--link-color);
+text-decoration:none;
 }
-#lunch .menu-flex{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+
+body {
+color:var(--text-color);
+font-family:Lato;
+height:100%;
+margin:0;
+overflow-x:hidden;
+width:100%;
 }
+
+p2 {
+display:block;
+}
+
+#container {
+min-height:100%;
+padding-bottom:0;
+position:relative;
+}
+
+.header {
+align-items:baseline;
+background:var(--header-color);
+color:var(--header-text);
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+padding:.25rem;
+width:100%;
+}
+
+.header span {
+flex:1 1 0;
+font-family:'Playfair Display';
+text-align:center;
+}
+
+.header ul {
+flex:1 1 0;
+text-align:center;
+text-transform:uppercase;
+}
+
+.header li {
+cursor:pointer;
+display:inline;
+list-style:none;
+padding-right:1rem;
+transition:.4s;
+}
+
+#home {
+align-items:center;
+display:flex;
+flex-direction:row;
+justify-content:space-between;
+min-height:100%;
+}
+
+#home div {
+flex:1 1 0;
+}
+
+#home .text {
+max-padding-left:5rem;
+max-padding-right:5rem;
+padding-left:10%;
+padding-right:10%;
+}
+
+#home .text p {
+margin-bottom:1rem;
+}
+
+#home .image {
+background-image:url(http://www.vitacraft.co.jp/recipe/season/spring/2013/images/photo_03.jpg);
+background-size:cover;
+height:100%;
+width:100%;
+}
+
+#home button {
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+
+#home button a {
+text-decoration:none;
+}
+
+#home #notice {
+color:red;
+display:block;
+font-weight:700;
+margin-left:auto;
+margin-right:auto;
+}
+
+.banner {
+color:var(--bg-color);
+max-height:180px;
+min-height:180px;
+padding-bottom:4rem;
+padding-top:4rem;
+width:100%;
+}
+
+#lunch .banner {
+background-image:url("/Users/myumi/Projects/Static Websites/tsuki/banner2.jpg");
+background-size:cover;
+}
+
+#dinner .banner {
+background-image:url("/Users/myumi/Projects/Static Websites/tsuki/banner1.jpg");
+background-size:cover;
+}
+
+.banner h1 {
+font-family:'Permanent Marker';
+font-size:4.5rem;
+padding-bottom:1rem;
+}
+
+.banner .buttons {
+padding-bottom:1rem;
+text-align:center;
+}
+
+.banner p {
+font-size:1.2rem;
+}
+
+.menu-flex {
+columns:2 400px;
+padding-bottom:2rem;
+}
+
+#lunch .menu-flex {
+padding-bottom:1.5rem;
+padding-top:1.5rem;
+}
+
 .menu-flex ul {
-    list-style: none;
-    flex: 1 1 0;
-    padding-left: 3rem;
-    padding-right: 3rem;
+flex:1 1 0;
+list-style:none;
+padding-left:3rem;
+padding-right:3rem;
 }
+
 .menu-flex ul ul {
-    list-style: initial;
-    padding: 0;
-    padding-left: 1.5rem;
+list-style:initial;
+padding:0 0 0 1.5rem;
 }
+
 .menu-flex ul li {
-    margin-bottom: 1em;
-    -webkit-column-break-inside: avoid;
-    -moz-column-break-inside:avoid;
-    -moz-page-break-inside:avoid;
-    page-break-inside: avoid;
-    break-inside: avoid-column;
+-moz-column-break-inside:avoid;
+-moz-page-break-inside:avoid;
+-webkit-column-break-inside:avoid;
+break-inside:avoid-column;
+margin-bottom:1em;
+page-break-inside:avoid;
 }
+
 .menu-flex ul ul li {
-    margin-bottom: 0;
-    -webkit-column-break-inside: avoid;
-    -moz-column-break-inside:avoid;
-    -moz-page-break-inside:avoid;
-    page-break-inside: avoid;
-    break-inside: avoid-column;
+-moz-column-break-inside:avoid;
+-moz-page-break-inside:avoid;
+-webkit-column-break-inside:avoid;
+break-inside:avoid-column;
+margin-bottom:0;
+page-break-inside:avoid;
 }
+
 .menu-flex ul span {
-    float: right;
+float:right;
 }
-#dinner H2{
-  font-size: 3.5em;
+
+#dinner h2 {
+font-size:3.5em;
 }
-#hours H1{
-  font-size: 3.5rem;
+
+#hours h1 {
+font-size:3.5rem;
 }
- #hours {
-     display: flex;
+
+#hours {
+columns:2 400px;
+margin:auto;
+padding:2rem;
 }
- #hours .hours {
-     flex: 1 1 0;
-     padding: 5rem;
-     margin: auto;
+
+#hours ul {
+list-style:none;
+margin:0;
+padding-left:4rem;
+padding-right:4rem;
 }
-#hours ul{
-  list-style: none;
-  margin: 0;
-  padding: 0;
+
+#hours li {
+-moz-column-break-inside:avoid;
+-moz-page-break-inside:avoid;
+-webkit-column-break-inside:avoid;
+break-inside:avoid-column;
+font-style:italic;
+padding-top:2rem;
+page-break-inside:avoid;
 }
-#hours li{
-    padding-top: 2rem;
-    font-style: italic;
+
+#hours ul span {
+float:right;
+font-style:normal;
 }
-#hours ul span{
-  float: right;
-  font-style: normal;
+
+#footer {
+align-items:baseline;
+background:var(--header-color);
+color:var(--header-text);
+justify-content:center;
+padding:1rem;
+text-align:center;
+width:100%;
 }
- #contact {
-     text-align: center;
+
+#footer a {
+color:var(--header-text);
+transition:.4s;
 }
- #footer{
-     width: 100%;
-     padding: 1rem;
-    /* display: flex;
-     */
-     text-align: center;
-     align-items: baseline;
-     justify-content: center;
-     background: var(--header-color);
-     color: var(--header-text);
+
+#footer i {
+color:var(--header-text);
+cursor:pointer;
+font-size:2em;
+padding:.25em;
 }
- #footer A{
-     color: var(--header-text);
-     transition: 0.4s;
+
+#footer #icons,p {
+margin:0;
+padding:0;
 }
- #footer I{
-     padding: 0.25em;
-     font-size: 2em;
-     cursor: pointer;
-     color: var(--header-text);
-    /* height: 30px;
-     */
+
+a:hover,.active,.header li:hover,#footer a:hover,i:hover {
+color:var(--hover-color);
 }
- #footer A:hover, I:hover{
-     color: var(--hover-color);
-}
- #footer #icons, P{
-     margin: 0;
-     padding: 0;
+
+.center,#contact {
+text-align:center;
 }
