@@ -31,7 +31,9 @@ border-radius:3px;
 color:var(--bg-color);
 padding:.8rem;
 text-transform:uppercase;
-transition-duration:.4s;
+-webkit-transition-duration:.4s;
+     -o-transition-duration:.4s;
+        transition-duration:.4s;
 }
 
 button:hover {
@@ -64,24 +66,36 @@ position:relative;
 }
 
 .header {
-align-items:baseline;
+-webkit-box-align:baseline;
+    -ms-flex-align:baseline;
+        align-items:baseline;
 background:var(--header-color);
 color:var(--header-text);
+display:-webkit-box;
+display:-ms-flexbox;
 display:flex;
-flex-direction:row;
-flex-wrap:wrap;
+-webkit-box-orient:horizontal;
+-webkit-box-direction:normal;
+    -ms-flex-direction:row;
+        flex-direction:row;
+-ms-flex-wrap:wrap;
+    flex-wrap:wrap;
 padding:.25rem;
 width:100%;
 }
 
 .header span {
-flex:1 1 0;
+-webkit-box-flex:1;
+    -ms-flex:1 1 0px;
+        flex:1 1 0;
 font-family:'Playfair Display';
 text-align:center;
 }
 
 .header ul {
-flex:1 1 0;
+-webkit-box-flex:1;
+    -ms-flex:1 1 0px;
+        flex:1 1 0;
 text-align:center;
 text-transform:uppercase;
 }
@@ -91,19 +105,32 @@ cursor:pointer;
 display:inline;
 list-style:none;
 padding-right:1rem;
+-webkit-transition:.4s;
+-o-transition:.4s;
 transition:.4s;
 }
 
 #home {
-align-items:center;
+-webkit-box-align:center;
+    -ms-flex-align:center;
+        align-items:center;
+display:-webkit-box;
+display:-ms-flexbox;
 display:flex;
-flex-direction:row;
-justify-content:space-between;
+-webkit-box-orient:horizontal;
+-webkit-box-direction:normal;
+    -ms-flex-direction:row;
+        flex-direction:row;
+-webkit-box-pack:justify;
+    -ms-flex-pack:justify;
+        justify-content:space-between;
 min-height:100%;
 }
 
 #home div {
-flex:1 1 0;
+-webkit-box-flex:1;
+    -ms-flex:1 1 0px;
+        flex:1 1 0;
 }
 
 #home .text {
@@ -118,7 +145,7 @@ margin-bottom:1rem;
 }
 
 #home .image {
-background-image:url(http://www.vitacraft.co.jp/recipe/season/spring/2013/images/photo_03.jpg);
+background-image:url("../home.jpg");
 background-size:cover;
 height:100%;
 width:100%;
@@ -152,12 +179,12 @@ width:100%;
 }
 
 #lunch .banner {
-background-image:url("/Users/myumi/Projects/Static Websites/tsuki/banner2.jpg");
+background-image:url("../banner2.jpg");
 background-size:cover;
 }
 
 #dinner .banner {
-background-image:url("/Users/myumi/Projects/Static Websites/tsuki/banner1.jpg");
+background-image:url("../banner1.jpg");
 background-size:cover;
 }
 
@@ -177,7 +204,8 @@ font-size:1.2rem;
 }
 
 .menu-flex {
-columns:2 400px;
+-webkit-columns:2 400px;
+        columns:2 400px;
 padding-bottom:2rem;
 }
 
@@ -187,7 +215,9 @@ padding-top:1.5rem;
 }
 
 .menu-flex ul {
-flex:1 1 0;
+-webkit-box-flex:1;
+    -ms-flex:1 1 0px;
+        flex:1 1 0;
 list-style:none;
 padding-left:3rem;
 padding-right:3rem;
@@ -229,7 +259,8 @@ font-size:3.5rem;
 }
 
 #hours {
-columns:2 400px;
+-webkit-columns:2 400px;
+        columns:2 400px;
 margin:auto;
 padding:2rem;
 }
@@ -257,10 +288,14 @@ font-style:normal;
 }
 
 #footer {
-align-items:baseline;
+-webkit-box-align:baseline;
+    -ms-flex-align:baseline;
+        align-items:baseline;
 background:var(--header-color);
 color:var(--header-text);
-justify-content:center;
+-webkit-box-pack:center;
+    -ms-flex-pack:center;
+        justify-content:center;
 padding:1rem;
 text-align:center;
 width:100%;
@@ -268,6 +303,8 @@ width:100%;
 
 #footer a {
 color:var(--header-text);
+-webkit-transition:.4s;
+-o-transition:.4s;
 transition:.4s;
 }
 

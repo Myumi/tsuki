@@ -1,11 +1,8 @@
-//clean up the menus
 //finish typing the menus
 //get out of jquery
-//fix tab padding on right side of header
-//figure something out for hours
 $(document).ready(function(){
   // make home seem active & others not
-  $("#home-tab").addClass("active");
+  document.getElementById("home-tab").classList.add("active");
   $(".tab").css("display", "none");
   $("#home").css("display", "");
 
