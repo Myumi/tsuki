@@ -1,5 +1,6 @@
 //finish typing the menus
 //get out of jquery
+//make desserts one column
 $(document).ready(function(){
   // make home seem active & others not
   document.getElementById("home-tab").classList.add("active");
