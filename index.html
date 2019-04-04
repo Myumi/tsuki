@@ -17,6 +17,7 @@
   <div id="container">
     <div class="header">
       <span>Tsuki: Japanese Resturant</span>
+      <span id="nav-icon">&#9776;</span>
       <ul class="nav">
         <li id="home-tab">Home</li>
         <li id='lunch-tab'>Lunch</li>
@@ -27,10 +28,10 @@
 
     <div class="tab" id="home">
       <div class="text">
-        <span id="notice" class="center">THIS IS A TEST ALERT.</span>
+        <span id="notice" class="center"></span>
         <h1>About Tsuki</h1>
         <p class="center">いらっしゃいませ!</p>
-        <p>Experience delectable Japanese food in a traditional dining setting. Zagat rated for over 15 years, the skill of our chefs' years of experience and training is reflected in every dish. <i>Tsuki</i> is a must for all sushi and sashimi lovers!</p>
+        <p>Experience delectable Japanese food in a traditional dining setting. Zagat rated for over 15 years, the skill of our chefs' years of experience and training is reflected in every dish. <i>Tsuki</i> is a must for all sushi and sashimi lovers.</p>
         <p>
           For private bookings, <i>Tsuki</i> offers private rooms to accomidate parties, corporate events, and private dining. Please make a reservation at <a href="tel:+19089530450">908-895-0450</a> and we will be happy to serve you.</p>
         <button onclick="location.href='https://www.orderstart.com/tsuki'">ORDER ONLINE</button>
@@ -45,7 +46,7 @@
         <p class="center">Served with soup, salad, and/or rice</p>
         <p class="center"><b>All substitutes will receive an extra charge.</b></p>
       </div>
-      <div class="menu-flex">
+      <div class="menu-lunch">
         <ul>
           <li>
             <h3>Sushi Lunch</h3>
@@ -108,9 +109,6 @@
               </ul>
             </p2>
           </li>
-        </ul>
-
-        <ul>
           <li>
             <h3>Nabeyaki Udon</h3>
             <span>10.5</span>
@@ -183,9 +181,10 @@
           <button id="dessert-btn">Desserts</button>
         </div>
       </div>
-      <div class="menu-flex" id="appetizer">
-        <ul>
+
+<div class="menu" id="appetizer">
           <h2>Soup</h2>
+          <ul>
           <li>
             <h3>Miso Soup</h3><span>2.5</span>
           </li>
@@ -193,11 +192,14 @@
             <h3>Clear Soup</h3><span>2.5</span>
           </li>
           <li>
-            <h3>Seafood Soup</h3><span></span>
+            <h3>Seafood Soup</h3><span>7.5</span>
             <p2>Shrimp, scallop, king crab, asparagus</p2>
           </li>
+          </ul>
+
 
           <h2>Salad</h2>
+          <ul>
           <li>
             <h3>House Green Salad</h3><span>3.5</span>
           </li>
@@ -232,8 +234,10 @@
             <h3>Kani Salad</h3><span>8</span>
             <p2>Threaded crab sticks, cucumber, caviar mix with mayo sauce</p2>
           </li>
+          </ul>
 
           <h2>Sushi Bar Appetizers</h2>
+          <ul>
           <li>
             <h3>Tako Sunomono</h3><span>9</span>
             <p2>Tako in vinegar sauce</p2>
@@ -280,8 +284,10 @@
           <li>
             <h3>Spider Special</h3><span>Seasonal Price</span>
           </li>
+          </ul>
 
           <h2>Appetizers</h2>
+          <ul>
           <li>
             <h3>Harumaki</h3><span>5</span>
             <p2>Spring roll</p2>
@@ -383,10 +389,11 @@
         </ul>
       </div>
 
-      <div class="menu-flex" id="entree">
-        <ul>
+      <div class="menu" id="entree">
+
           <h2>Sashimi Platters</h2>
           <p class="center">Served with soup, salad, and rice</p>
+<ul>
           <li>
             <h3>Sashimi Special</h3><span>24</span>
           </li>
@@ -399,9 +406,12 @@
           <li>
             <h3>Sashimi Deluxe (Serves 2)</h3><span>58</span>
           </li>
+          </ul>
+
 
           <h2>Sushi Platters</h2>
           <p class="center">Served with soup and salad</p>
+          <ul>
           <li>
             <h3>Chirashi</h3><span>20</span>
           </li>
@@ -434,9 +444,11 @@
           <li>
             <h3>Sushi & Sashimi (Serves 2)</h3><span>63</span>
           </li>
+          </ul>
 
           <h2>Tempura & Panko Crusted</h2>
           <p class="center">Served with soup, salad, and rice</p>
+<ul>
           <li>
             <h3>Vegetable Tempura</h3><span>15</span>
           </li>
@@ -459,9 +471,12 @@
           <li>
             <h3>Chicken Maki</h3><span>20</span>
           </li>
+          </ul>
+
 
           <h2>Teriaki</h2>
           <p class="center">Served with soup, salad, and rice</p>
+<ul>
           <li>
             <h3>Pork Miso Yaki</h3><span>18.3</span>
           </li>
@@ -501,9 +516,11 @@
             <h3>Seafood Combo Teriyaki</h3><span>25</span>
             <p2>Scallop, salmon, and shrimp</p2>
           </li>
+          </ul>
 
           <h2>Udon</h2>
           <p class="center">Served with salad</p>
+          <ul>
           <li>
             <h3>Chicken Yaki Udon</h3><span>14.5</span>
             <p2>Pan-fried udon noodles with vegetables and chicken</p2>
@@ -520,9 +537,11 @@
             <h3>Nabeyaki Udon</h3><span>17.5</span>
             <p2>Udon noodles, vegetables, chicken, fish cake, and egg in a clear broth with a side of tempura shrimp</p2>
           </li>
+          </ul>
 
           <h2>Nabemono</h2>
           <p class="center">Served with salad and rice</p>
+          <ul>
           <li>
             <h3>Yosenabe</h3><span>19.5</span>
             <p2>Fish, chicken, shrimp, beancurd, fish cake, vegetables, and clear noodles in a clear broth</p2>
@@ -535,12 +554,12 @@
             <h3>Sukiyaki</h3><span>19.5</span>
             <p2>Thinly sliced beef, beancurd, vegetables and clear noodles in a sweet soy broth</p2>
           </li>
+          </ul>
 
-          <li>
   <h2>Sushi/Sashimi a la Carte</h2>
   <p class="center">Sushi: 2 pieces per order<br />
   Sashimi: 3 piece per order</p>
-  </li>
+  <ul>
   <li>
   <h3>Alabacore</h3><span>7</span>
   </li>
@@ -631,9 +650,11 @@
 <li>
 <h3>Toro (Fatty Tuna)</h3><span>Market Price</span>
 </li>
+</ul>
 
 <h2>Sushi roll/Hand roll (Maki/Temaki) a la Carte</h2>
 <p class="center">Each roll with be cut into 5 to 8 pieces</p>
+<ul>
 <li>
 <h3>Alaskan</h3><span>8</span>
 </li>
@@ -726,9 +747,10 @@
 </li>
 </ul>
 </div>
-<div class="menu-flex" id="chefs">
-  <ul>
+
+<div class="menu" id="chefs">
 <h2>Special Appetizers</h2>
+<ul>
 <li>
 <h3>Festival</h3><span>15</span>
 <p2>Thin slice of seared white tuna with carrot, bell pepper, seaweed, caviar, lemon, served with special vinegar sauce</p2>
@@ -757,8 +779,11 @@
 <h3>Baja Sushi</h3><span>15</span>
 <p2>Lightly breaded fried sea bass or eggplant topped with guacamole</p2>
 </li>
+</ul>
+
 
 <h2>Special Rolls</h2>
+<ul>
 <li>
 <h3>Batman Roll</h3><span>9.5</span>
 <p2>Kani and avocado topped with tuna, salmon, and caviar</p2>
@@ -903,9 +928,10 @@
 <h3>Zebra Roll</h3><span>16</span>
 <p2>Tuna, cucumber, and spicy sauce topped with avocado, shrimp, carrot, tempura crumb and a special sauce</p2>
 </li>
-    </ul>
-  </div>
-<div class="menu-flex" id="dessert">
+</ul>
+</div>
+
+<div class="menu" id="dessert">
   <h2>Desserts</h2>
   <ul>
 <li>

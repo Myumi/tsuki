@@ -1,6 +1,8 @@
-//finish typing the menus
-//get out of jquery
-//make desserts one column
+//make hours less ugly
+//fix lunch menu - combine css with dinner
+//MOBILE:
+//figure out something cute for main menu on mobile
+//change menu items for mobile
 $(document).ready(function(){
   // make home seem active & others not
   document.getElementById("home-tab").classList.add("active");
@@ -10,7 +12,7 @@ $(document).ready(function(){
   //make menus invisible
   $(".menu").css("display", "none");
 
-    //display menus
+    //display menus for dinner
   $("#dinner button").click(function() {
     $("#dinner button").css("background", "var(--button-color)");
     let button = $(this);
@@ -18,7 +20,7 @@ $(document).ready(function(){
     let menuName = $(this)
       .attr("id")
       .replace(/-btn/g, "");
-    $("#dinner .menu-flex").css("display", "none");
+    $("#dinner .menu").css("display", "none");
     $("#" + menuName).fadeIn(300).css("display", "");
   });
 
