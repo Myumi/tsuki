@@ -40,7 +40,7 @@ $(document).ready(function() {
       $(".header ul").addClass("dropdown");
     }
     $(".dropdown").css("display") === "none"
-      ? $(".dropdown").css("display", "inline")
+      ? $(".dropdown").css("display", "inline-grid")
       : $(".dropdown").css("display", "none");
   });
 
@@ -58,5 +58,6 @@ $(document).ready(function() {
     $("#" + tabName)
       .fadeIn(500)
       .css("display", "");
+    $(".dropdown").css("display", "none");
   }
 });
