@@ -1,4 +1,3 @@
-//TODO: fix lunch menu - combine css with dinner
 //TODO: fix lunch menu - price options for secondhand lists
 $(document).ready(function() {
   // make home seem active & others not
