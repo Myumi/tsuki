@@ -1,6 +1,5 @@
-//make hours less ugly - condense
-//fix lunch menu - combine css with dinner
-//fix lunch menu - price options for secondhand lists
+//TODO: fix lunch menu - combine css with dinner
+//TODO: fix lunch menu - price options for secondhand lists
 $(document).ready(function() {
   // make home seem active & others not
   document.getElementById("home-tab").classList.add("active");
