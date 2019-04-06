@@ -1,8 +1,7 @@
-//make hours less ugly - maybe a dropdown?
+//make hours less ugly - condense
 //fix lunch menu - combine css with dinner
-//MOBILE:
-//figure out something cute for main menu on mobile
-//nav-icon - onclick() -> add class dropdown, remove class nav, on click redo
+//fix lunch menu - bullet list type
+//fix lunch menu - price options for secondhand lists not aligned properly
 $(document).ready(function() {
   // make home seem active & others not
   document.getElementById("home-tab").classList.add("active");
@@ -11,6 +10,9 @@ $(document).ready(function() {
 
   //make menus invisible
   $(".menu").css("display", "none");
+
+  //set appetizer button as default clicked
+  $("#appetizer-btn").click();
 
   //display menus for dinner
   $("#dinner button").click(function() {
@@ -25,9 +27,6 @@ $(document).ready(function() {
       .fadeIn(300)
       .css("display", "");
   });
-
-  //set appetizer button as default clicked
-  $("#appetizer-btn").click();
 
   //display pages
   $(".nav li").click(function() {
@@ -53,7 +52,8 @@ $(document).ready(function() {
   function tabShow(tab) {
     let tabName = tab.attr("id").replace(/-tab/g, "");
     $(".nav li").removeClass("active");
-    $(this).addClass("active");
+    $(".dropdown li").removeClass("active");
+    tab.addClass("active");
     $(".tab").css("display", "none");
     $("#" + tabName)
       .fadeIn(500)
