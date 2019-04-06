@@ -235,7 +235,7 @@ font-size:1.2rem;
 #lunch .menu-lunch ul ul li{
   padding-bottom: 0;
     padding-left: 1rem;
-  list-style: circle;
+  list-style: initial;
 }
 #lunch ul span {
   float:right;
@@ -314,7 +314,7 @@ page-break-inside:avoid;
 }
 
 #hours ul span {
-/* float:right; */
+float:right;
 font-style:normal;
 }
 

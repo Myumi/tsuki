@@ -1,7 +1,6 @@
 //make hours less ugly - condense
 //fix lunch menu - combine css with dinner
-//fix lunch menu - bullet list type
-//fix lunch menu - price options for secondhand lists not aligned properly
+//fix lunch menu - price options for secondhand lists
 $(document).ready(function() {
   // make home seem active & others not
   document.getElementById("home-tab").classList.add("active");
@@ -10,9 +9,6 @@ $(document).ready(function() {
 
   //make menus invisible
   $(".menu").css("display", "none");
-
-  //set appetizer button as default clicked
-  $("#appetizer-btn").click();
 
   //display menus for dinner
   $("#dinner button").click(function() {
@@ -27,6 +23,9 @@ $(document).ready(function() {
       .fadeIn(300)
       .css("display", "");
   });
+
+  //set appetizer button as default clicked
+  $("#appetizer-btn").click();
 
   //display pages
   $(".nav li").click(function() {
