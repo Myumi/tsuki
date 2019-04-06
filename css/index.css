@@ -233,35 +233,29 @@ font-size:3.5em;
 
 #hours h1 {
 font-size:3.5rem;
+font-family:'Amatic SC';
+padding-bottom: 1.8rem;
 }
 
 #hours {
--webkit-columns:2 400px;
-        columns:2 400px;
 margin:auto;
 padding:2rem;
 }
 
 #hours ul {
 list-style:none;
-margin:0;
-padding-left:4rem;
-padding-right:4rem;
+margin: 0;
+padding: 0;
 }
 
 #hours li {
--moz-column-break-inside:avoid;
--moz-page-break-inside:avoid;
--webkit-column-break-inside:avoid;
-break-inside:avoid-column;
-font-style:italic;
-padding-top:2rem;
-page-break-inside:avoid;
+padding-bottom:1.5rem;
+text-align: left;
+margin-left: 25%;
+margin-right: 25%;
 }
-
-#hours ul span {
-float:right;
-font-style:normal;
+#hours span{
+  float: right;
 }
 
 #footer {
@@ -308,7 +302,7 @@ text-align:center;
 @media only screen
   and (min-width: 415px) and (max-width: 630px){
     #home{
-      all: unset;
+      display: block;
     }
     #home .image{
       display: none;
@@ -320,7 +314,7 @@ text-align:center;
       width: 100%;
       padding-top: 4rem;
       padding-bottom: 4rem;
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
     }
     #home .mobile-banner .center{
       font-size: 1.5rem;
@@ -333,6 +327,10 @@ text-align:center;
       font-size: 1.2rem;
       padding-left: 10%;
       padding-right: 10%;
+    }
+    #home button{
+      margin-top: 2rem;
+      margin-bottom: 1rem;
     }
     .header{
       padding-top: 0.5rem;
@@ -351,7 +349,7 @@ text-align:center;
     .header .dropdown{
       display: none;
       position: absolute;
-      left: 70%;
+      left: 74%;
       top: 45px;
       background-color: #f9f9f9;
       min-width: 120px;

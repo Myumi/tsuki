@@ -1,6 +1,7 @@
 $(document).ready(function() {
   // make home seem active & others not
   document.getElementById("home-tab").classList.add("active");
+
   $(".tab").css("display", "none");
   $("#home").css("display", "");
 
