@@ -224,7 +224,9 @@ page-break-inside:avoid;
 #dinner ul span, #lunch ul span {
   float:right;
 }
-
+#dinner .center{
+  margin-bottom: 15px;
+}
 #dinner h2 {
 font-size:3.5em;
 }
