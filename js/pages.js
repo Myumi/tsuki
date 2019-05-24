@@ -2,6 +2,8 @@ document.onreadystatechange = function() {
   if (document.readyState == "interactive") {
     //add event listeners
 
+    //put this under a check for page width
+    document.getElementById("nav__menu").classList.toggle("visible");
     //display nav menu
     document
       .getElementsByClassName("title__icon")[0]

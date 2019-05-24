@@ -1,16 +1,24 @@
 :root {
-  --hvr-clr: #33cc66;
+  --hover-color: rgba(51, 204, 102, 1);
+  --header-shadow: rgba(30, 20, 80, 0.1);
+  --video-background: rgba(131, 173, 181, 0.9);
+  --button-color: rgba(46, 64, 69, 1);
+  --button-text: rgba(236, 250, 240, 1);
+  --link-color: rgba(236, 250, 240, 1);
 }
 html,
 body {
   height: 100%;
   margin: 0;
 }
+a, a:active{
+  color: var(--link-color);
+  text-decoration: none;
+}
 .header__nav {
   text-align: center;
 }
 .nav__menu {
-
 }
 .header__title {
   text-align: center;
@@ -18,7 +26,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  box-shadow: 0 4px 2px -3px rgba(30, 20, 80, 0.1);
+  box-shadow: 0 4px 2px -3px var(--header-shadow);
+  position: sticky;
 }
 .title__icon {
   font-size: 2rem;
@@ -30,6 +39,45 @@ body {
 .title__spacer {
   width: 2rem;
 }
-.visible{
+.body__main {
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--video-background);
+}
+.main__img {
+}
+.main__video {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+.video__content {
+  margin: 0.5rem;
+  height: 15rem;
+  width: 20rem;
+  background-color: black;
+  box-shadow: -15px 15px 1px -2px var(--video-background);
+}
+.main__text {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.text__content {
+  padding: 0.2rem 1.5rem;
+}
+.main__button {
+  background-color: var(--button-color);
+  color: var(--button-text);
+  margin: auto;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-top: -20px;
+  border: none;
+}
+.visible {
   display: none;
 }
