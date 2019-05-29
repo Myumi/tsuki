@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway&display=swap');
+
 :root {
   --hover-color: rgba(51, 204, 102, 1);
   --header-shadow: rgba(30, 20, 80, 0.1);
@@ -5,15 +7,20 @@
   --button-color: rgba(46, 64, 69, 1);
   --button-text: rgba(236, 250, 240, 1);
   --link-color: rgba(236, 250, 240, 1);
+  --title-font: 'Playfair Display';
+  --main-font: 'Raleway';
+  --link-font: 'Raleway';
 }
 html,
 body {
   height: 100%;
   margin: 0;
+  font-family: var(--main-font);
 }
 a, a:active{
   color: var(--link-color);
   text-decoration: none;
+  font-family: var(--link-font);
 }
 #alert{
   width: 100%;
@@ -35,7 +42,7 @@ a, a:active{
   font-size: 1.8rem;
 }
 .header__title {
-  text-align: center;
+  font-family: var(--title-font);
   padding: 0.2rem;
   display: flex;
   align-items: center;
@@ -119,6 +126,9 @@ a, a:active{
 }
 .menu__banner{
   text-align: center;
+}
+.item__price{
+  text-align: right;
 }
 .invisible {
   display: none;
