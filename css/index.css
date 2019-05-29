@@ -15,10 +15,23 @@ a, a:active{
   color: var(--link-color);
   text-decoration: none;
 }
+#alert{
+  width: 100%;
+  height: 1.3rem;
+  text-align: center;
+  padding-top: 0.2rem;
+  color: white;
+  background-color: red;
+}
 .header__nav {
   text-align: center;
 }
-.nav__menu {
+#nav__menu{
+  list-style: none;
+  /* display: flex;
+  flex-direction: column; */
+  text-align: left;
+  font-size: 1.8rem;
 }
 .header__title {
   text-align: center;
@@ -78,6 +91,6 @@ a, a:active{
   margin-top: -20px;
   border: none;
 }
-.visible {
+.invisible {
   display: none;
 }
