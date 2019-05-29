@@ -22,6 +22,7 @@ a, a:active{
   padding-top: 0.2rem;
   color: white;
   background-color: red;
+  margin: 0;
 }
 .header__nav {
   text-align: center;
@@ -35,12 +36,14 @@ a, a:active{
 }
 .header__title {
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.2rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
   box-shadow: 0 4px 2px -3px var(--header-shadow);
+  top: 0;
   position: sticky;
+  height: 4rem;
 }
 .title__icon {
   font-size: 2rem;
@@ -90,6 +93,32 @@ a, a:active{
   font-size: 1.5rem;
   margin-top: -20px;
   border: none;
+}
+.body__menu{
+
+}
+.menu__nav{
+
+}
+.menu{
+  padding: 2rem;
+}
+.lunch__menu{
+  columns: 2;
+  column-gap: 4rem;
+  list-style:none;
+  padding: 1rem;
+  margin: 0;
+}
+.dinner__menu{
+  columns: 2;
+  column-gap: 4rem;
+  list-style:none;
+  padding: 1rem;
+  margin: 0;
+}
+.menu__banner{
+  text-align: center;
 }
 .invisible {
   display: none;
