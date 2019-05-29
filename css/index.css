@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Raleway&display=swap");
 
 :root {
   --hover-color: rgba(51, 204, 102, 1);
@@ -7,9 +7,9 @@
   --button-color: rgba(46, 64, 69, 1);
   --button-text: rgba(236, 250, 240, 1);
   --link-color: rgba(236, 250, 240, 1);
-  --title-font: 'Playfair Display';
-  --main-font: 'Raleway';
-  --link-font: 'Raleway';
+  --title-font: "Playfair Display";
+  --main-font: "Raleway";
+  --link-font: "Raleway";
 }
 html,
 body {
@@ -17,12 +17,13 @@ body {
   margin: 0;
   font-family: var(--main-font);
 }
-a, a:active{
+a,
+a:active {
   color: var(--link-color);
   text-decoration: none;
   font-family: var(--link-font);
 }
-#alert{
+#alert {
   width: 100%;
   height: 1.3rem;
   text-align: center;
@@ -34,7 +35,7 @@ a, a:active{
 .header__nav {
   text-align: center;
 }
-#nav__menu{
+#nav__menu {
   list-style: none;
   /* display: flex;
   flex-direction: column; */
@@ -101,34 +102,60 @@ a, a:active{
   margin-top: -20px;
   border: none;
 }
-.body__menu{
-
+.body__menu {
 }
-.menu__nav{
-
+.menu__nav {
 }
-.menu{
+.menu {
   padding: 2rem;
 }
-.lunch__menu{
+.lunch__menu {
   columns: 2;
   column-gap: 4rem;
-  list-style:none;
+  list-style: none;
   padding: 1rem;
   margin: 0;
 }
-.dinner__menu{
+.dinner__menu {
   columns: 2;
   column-gap: 4rem;
-  list-style:none;
+  list-style: none;
   padding: 1rem;
   margin: 0;
 }
-.menu__banner{
+.menu__banner {
   text-align: center;
 }
-.item__price{
+.banner__title{
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+.banner__subtitle{
+  margin: 0;
+}
+.banner__subtitle-bold{
+  font-weight: 600;
+  font-style: italic;
+  margin: 0;
+}
+.menu__item{
+  break-inside:avoid-column;
+  /* margin-bottom:0.3rem; */
+  page-break-inside: avoid;
+}
+.item__name {
+  font-size: 1rem;
+  margin: 0;
+}
+.item__price {
   text-align: right;
+  margin: 0;
+}
+.item__desc {
+  font-size: 0.8rem;
+}
+.item__submenu{
+  font-size: 0.8rem;
 }
 .invisible {
   display: none;
