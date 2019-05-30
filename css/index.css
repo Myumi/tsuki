@@ -71,7 +71,7 @@ a:active {
   width: 2rem;
 }
 .body__main {
-  margin: 0.5rem;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   background-color: var(--video-background);
