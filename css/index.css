@@ -7,6 +7,8 @@
   --button-color: rgba(46, 64, 69, 1);
   --button-text: rgba(236, 250, 240, 1);
   --link-color: rgba(236, 250, 240, 1);
+  --background-color: rgba(254, 254, 253, 1);
+  --header-color: rgba(254, 254, 254, 1);
   --title-font: "Playfair Display";
   --main-font: "Raleway";
   --link-font: "Raleway";
@@ -16,6 +18,7 @@ body {
   height: 100%;
   margin: 0;
   font-family: var(--main-font);
+  background-color: var(--background-color);
 }
 a,
 a:active {
@@ -52,6 +55,7 @@ a:active {
   top: 0;
   position: sticky;
   height: 4rem;
+  background: white;
 }
 .title__icon {
   font-size: 2rem;
@@ -68,8 +72,13 @@ a:active {
   display: flex;
   flex-direction: column;
   background-color: var(--video-background);
+  background-image: url("../img/paper.png");
+  background-repeat: repeat;
+  background-blend-mode: multiply;
+  border-radius: 0.25rem;
 }
 .main__img {
+  border-radius: 0.25rem;
 }
 .main__video {
   margin: 0.5rem;
@@ -109,53 +118,55 @@ a:active {
 .menu {
   padding: 2rem;
 }
-.lunch__menu {
-  columns: 2;
-  column-gap: 4rem;
-  list-style: none;
-  padding: 1rem;
-  margin: 0;
-}
+.lunch__menu,
 .dinner__menu {
   columns: 2;
-  column-gap: 4rem;
+  column-gap: 3.2rem;
   list-style: none;
-  padding: 1rem;
+  padding: 0.2rem;
   margin: 0;
 }
 .menu__banner {
   text-align: center;
+  margin-bottom: 0.8rem;
 }
-.banner__title{
+.banner__title {
   font-size: 2rem;
   margin: 0.5rem;
 }
-.banner__subtitle{
+.banner__subtitle {
   margin: 0;
 }
-.banner__subtitle-bold{
+.banner__subtitle-bold {
   font-weight: 600;
   font-style: italic;
   margin: 0;
 }
-.menu__item{
-  break-inside:avoid-column;
-  /* margin-bottom:0.3rem; */
+.menu__item {
+  break-inside: avoid-column;
   page-break-inside: avoid;
+  margin-bottom: 0.8rem;
 }
 .item__name {
   font-size: 1rem;
+  text-align: left;
   margin: 0;
 }
 .item__price {
-  text-align: right;
-  margin: 0;
+  float: right;
+  font-size: 0.95rem;
 }
 .item__desc {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
+  margin: 0 0.15rem;
 }
-.item__submenu{
+.item__submenu {
   font-size: 0.8rem;
+  padding-left: 1.8rem;
+}
+.submenu__price {
+  float: right;
+  margin: 0;
 }
 .invisible {
   display: none;
