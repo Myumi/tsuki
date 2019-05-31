@@ -176,6 +176,18 @@ a:active {
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
 }
+.menu__buttons button{
+  background-color: var(--menu-nav-button-color);
+  padding: 0.6rem 1rem;
+  text-align: center;
+  cursor: pointer;
+  font-family: var(--title-font);
+  color: var(--menu-nav-button-text);
+  font-size: 1rem;
+}
+.menu__buttons button:hover{
+  background-color: var(--menu-nav-button-hover);
+}
 .menu__item {
   break-inside: avoid-column;
   page-break-inside: avoid;
