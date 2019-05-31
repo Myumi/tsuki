@@ -43,8 +43,6 @@ a:active {
 }
 #nav__menu {
   list-style: none;
-  /* display: flex;
-  flex-direction: column; */
   text-align: left;
   font-size: 1.8rem;
 }
@@ -138,14 +136,13 @@ a:active {
 }
 .menu__nav li:hover {
   background-color: var(--menu-nav-button-hover);
-  text-decoration:underline;
 }
 .menu {
   padding: 0.5rem 2rem 2rem 2rem;
 }
 .lunch__menu,
 .dinner__menu {
-  columns: 2;
+  columns: 2 250px;
   column-gap: 3.2rem;
   list-style: none;
   padding: 0.2rem;
@@ -166,6 +163,18 @@ a:active {
   font-weight: 600;
   font-style: italic;
   margin: 0;
+}
+.section{
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  break-inside: avoid-column;
+  page-break-inside: avoid;
+}
+.menu__title{
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
 }
 .menu__item {
   break-inside: avoid-column;
