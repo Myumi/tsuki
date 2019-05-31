@@ -171,10 +171,16 @@ a:active {
   break-inside: avoid-column;
   page-break-inside: avoid;
 }
+.section li:nth-child(2){
+  margin-top: 0.8rem;
+}
 .menu__title{
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin: 0;
   font-size: 1.5rem;
+}
+.menu__subtitle{
+  margin:0;
+  font-size: 0.9rem;
 }
 .menu__buttons button{
   background-color: var(--menu-nav-button-color);
