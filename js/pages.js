@@ -53,15 +53,19 @@ document.onreadystatechange = function() {
     const menus = document.getElementsByClassName("menu");
     for (let item of menus) {
       item.style.display = "none";
+      document.getElementById("button__"+item.id).classList.remove("active__button");
     }
     document.getElementById(menu).style.display = "block";
+    document.getElementById("button__" + menu).classList.add("active__button");
   }
   function openDinnerMenu(menu) {
     const sections = document.getElementsByClassName("menu__section");
     for (let item of sections) {
       item.style.display = "none";
-      document.getElementById(menu).style.display = "block";
+      document.getElementById("button__"+item.id).classList.remove("active__button");
     }
+    document.getElementById(menu).style.display = "block";
+    document.getElementById("button__"+menu).classList.add("active__button");
   }
 };
 
@@ -69,5 +73,4 @@ document.onreadystatechange = function() {
 //make image a slideshow same size
 //make image slideshow fade in
 //make nav buttons show pages / remove nav buttons?
-//lunch and dinner menu buttons display menus
 //add info on bottom
