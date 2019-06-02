@@ -34,25 +34,40 @@ document.onreadystatechange = function() {
   }
   setInterval(slideshow, 2500);
 
-  //dinner menu buttons
-  const dinnerMenus = document.getElementsByClassName("menu__button");
-  for (let item of dinnerMenus) {
-    item.addEventListener("click", function() {
-      openDinnerMenu(item.id.replace("button__", ""));
-    });
-  }
+  //menu buttons
+  openMenu("lunch");
   openDinnerMenu("appetizer");
+  const menuButtons = document.getElementsByClassName("menu__button");
+  for (let item of menuButtons) {
+    if (item.parentElement.classList[0] === "menu__buttons") {
+      item.addEventListener("click", function() {
+        openDinnerMenu(item.id.replace("button__", ""));
+      });
+    } else if (item.parentElement.classList[0] === "menu__nav") {
+      item.addEventListener("click", function() {
+        openMenu(item.id.replace("button__", ""));
+      });
+    }
+  }
+  function openMenu(menu) {
+    const menus = document.getElementsByClassName("menu");
+    for (let item of menus) {
+      item.style.display = "none";
+    }
+    document.getElementById(menu).style.display = "block";
+  }
   function openDinnerMenu(menu) {
     const sections = document.getElementsByClassName("menu__section");
     for (let item of sections) {
       item.style.display = "none";
+      document.getElementById(menu).style.display = "block";
     }
-    document.getElementById(menu).style.display = "block";
   }
 };
 
 //hours & facebook link should be on main page
 //make image a slideshow same size
 //make image slideshow fade in
-//make nav buttons show pages
+//make nav buttons show pages / remove nav buttons?
+//lunch and dinner menu buttons display menus
 //add info on bottom
