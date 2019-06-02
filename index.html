@@ -8,13 +8,14 @@
   <meta name="keywords" content="">
 </head>
 <body>
-  <p id="alert" class="invisible">This is a test alert.</p>
   <div class="headers">
+      <div id="alert" class="invisible">This is a test alert.</div>
+    <div class="header__address"><a href="https://maps.google.com/?q=23 Mine Brook Road Bernardsville, NJ 07924">23 Mine Brook Road Bernardsville, NJ 07924</a></div>
     <div class="header__nav">
       <ul id="nav__menu">
-        <li id="li__menu">Menu</li>
-        <li id="li__about">About</li>
-        <li id="li__contact">Contact</li>
+        <li class="nav__item" id="menus">Menus</li>
+        <li class="nav__item" id="about">About</li>
+        <li class="nav__item" id="contact">Contact</li>
       </ul>
     </div>
     <div class="header__title">
@@ -24,7 +25,11 @@
     </div>
   </div>
   <div class="body__main">
-    <img class="main__img" alt="Sushi slideshow" src="./img/home.jpg" />
+    <div class="main__img">
+    <img class="img__slideshow" alt="Sushi slideshow" src="./img/home.jpg" />
+    <img class="img__slideshow" alt="Sushi slideshow" src="./img/banner2.jpg" />
+    <img class="img__slideshow" alt="Sushi slideshow" src="./img/banner1.jpg" />
+  </div>
     <button class="main__button">Order Online →</button>
     <div class="main__text">
       <p class="text__content">
@@ -37,7 +42,7 @@
         For private bookings, <i>Tsuki</i> offers private rooms to accommodate
         parties, corporate events, and private dining. Please make a reservation
         at <a href="tel:+19089530450">908-895-0450</a> and we will be happy to
-        serve you.
+        serve you. Tsuki is a BYOB resturant.
       </p>
     </div>
   </div>
@@ -227,17 +232,17 @@
       <div class="menu__banner">
         <p class="banner__title">Dinner Menu</p>
         <div class="menu__buttons">
-          <button id="button__appetizer">Appetizers</button>
-          <button id="button__entree">Entrees</button>
-          <button id="button__chefs">Chef's Specials</button>
-          <button id="button__dessert">Desserts</button>
+          <button id="button__appetizer" class="menu__button">Appetizers</button>
+          <button id="button__entree" class="menu__button">Entrees</button>
+          <button id="button__chefs" class="menu__button">Chef's Specials</button>
+          <button id="button__dessert" class="menu__button">Desserts</button>
         </div>
       </div>
       <div class="dinner__menu">
         <div class="menu__section" id="appetizer">
           <ul class="section">
             <li>
-              <p class="menu__title">Soup</p>
+              <p class="menu__title">Soups</p>
             </li>
             <li class="menu__item">
               <p class="item__name">
@@ -258,7 +263,7 @@
           </ul>
           <ul class="section">
             <li>
-              <p class="menu__title">Salad</p>
+              <p class="menu__title">Salads</p>
             </li>
             <li class="menu__item">
               <p class="item__name">

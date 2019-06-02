@@ -4,7 +4,6 @@ document.onreadystatechange = function() {
 
     //put this under a check for page width
     document.getElementById("nav__menu").classList.toggle("invisible");
-    console.log(document.getElementById("nav__menu"))
     //display nav menu
     document
       .getElementsByClassName("title__icon")[0]
@@ -12,17 +11,48 @@ document.onreadystatechange = function() {
         //display menu or remove menu
         document.getElementById("nav__menu").classList.toggle("invisible");
       });
-
-    //show pages from nav item click
-    document.getElementById("nav__menu").getElementsByTagName("li");
-    addEventListener("click", showPage);
   }
+
+  //show pages from nav item click
+  document.getElementById("nav__menu").getElementsByTagName("li");
+  // .addEventListener("click", showPage);
 
   function showPage(event) {
     const navItem = event.target.id;
   }
+
+  //image slideshow
+  let slideIndex = 0;
+  slideshow();
+  function slideshow() {
+    const slides = document.getElementsByClassName("img__slideshow");
+    for (let item of slides) {
+      item.style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
+    slideIndex + 1 > slides.length - 1 ? (slideIndex = 0) : slideIndex++;
+  }
+  setInterval(slideshow, 2500);
+
+  //dinner menu buttons
+  const dinnerMenus = document.getElementsByClassName("menu__button");
+  for (let item of dinnerMenus) {
+    item.addEventListener("click", function() {
+      openDinnerMenu(item.id.replace("button__", ""));
+    });
+  }
+  openDinnerMenu("appetizer");
+  function openDinnerMenu(menu) {
+    const sections = document.getElementsByClassName("menu__section");
+    for (let item of sections) {
+      item.style.display = "none";
+    }
+    document.getElementById(menu).style.display = "block";
+  }
 };
 
-//in mobile: info and contact open submenus
-//in tablet, desktop: displayed on header
-//alert should be red header above nav
+//hours & facebook link should be on main page
+//make image a slideshow same size
+//make image slideshow fade in
+//make nav buttons show pages
+//add info on bottom
