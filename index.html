@@ -3,14 +3,16 @@
   <title>Tsuki - Japanese Resturant</title>
   <link rel="stylesheet" href="css/index.css" />
   <script src="js/pages.js"></script>
-  <meta charset="UTF-8">
-  <meta name="description" content="Japanese resturant in Bernardsville, NJ">
-  <meta name="keywords" content="">
+  <meta charset="UTF-8" />
+  <meta name="description" content="Japanese resturant in Bernardsville, NJ" />
+  <meta name="keywords" content="" />
 </head>
 <body>
   <div class="headers">
-      <div id="alert" class="invisible">This is a test alert.</div>
-    <div class="header__address"><a href="https://maps.google.com/?q=23 Mine Brook Road Bernardsville, NJ 07924">23 Mine Brook Road Bernardsville, NJ 07924</a></div>
+    <div id="alert" class="invisible">This is a test alert.</div>
+    <div class="header__address">
+      <a href="https://maps.google.com/?q=23 Mine Brook Road Bernardsville, NJ 07924">23 Mine Brook Road Bernardsville, NJ 07924</a>
+    </div>
     <div class="header__nav">
       <ul id="nav__menu">
         <li class="nav__item" id="menus">Menus</li>
@@ -26,10 +28,18 @@
   </div>
   <div class="body__main">
     <div class="main__img">
-    <img class="img__slideshow" alt="Sushi slideshow" src="./img/home.jpg" />
-    <img class="img__slideshow" alt="Sushi slideshow" src="./img/banner2.jpg" />
-    <img class="img__slideshow" alt="Sushi slideshow" src="./img/banner1.jpg" />
-  </div>
+      <img class="img__slideshow" alt="Sushi slideshow" src="./img/home.jpg" />
+      <img
+        class="img__slideshow"
+        alt="Sushi slideshow"
+        src="./img/banner2.jpg"
+      />
+      <img
+        class="img__slideshow"
+        alt="Sushi slideshow"
+        src="./img/banner1.jpg"
+      />
+    </div>
     <button class="main__button">Order Online →</button>
     <div class="main__text">
       <p class="text__content">
@@ -46,7 +56,6 @@
       </p>
     </div>
   </div>
-  <div class="body__video"></div>
   <div class="body__menu">
     <ul class="menu__nav">
       <li id="button__lunch" class="menu__button">Lunch Menu</li>
@@ -54,7 +63,7 @@
     </ul>
     <div id="lunch" class="menu">
       <div class="menu__banner">
-        <p class="banner__title">Lunch Menu</p>
+        <h4 class="banner__title">Lunch Menu</h4>
         <p class="banner__subtitle">Served with soup, salad, and/or rice</p>
         <p class="banner__subtitle-bold">
           All substitutes will receive an extra charge.
@@ -230,20 +239,22 @@
     </div>
     <div id="dinner" class="menu">
       <div class="menu__banner">
-        <p class="banner__title">Dinner Menu</p>
+        <h4 class="banner__title">Dinner Menu</h4>
         <div class="menu__buttons">
-          <button id="button__appetizer" class="menu__button">Appetizers</button>
+          <button id="button__appetizer" class="menu__button">
+            Appetizers
+          </button>
           <button id="button__entree" class="menu__button">Entrees</button>
-          <button id="button__chefs" class="menu__button">Chef's Specials</button>
           <button id="button__dessert" class="menu__button">Desserts</button>
+          <button id="button__chefs" class="menu__button">
+            Chef's Specials
+          </button>
         </div>
       </div>
       <div class="dinner__menu">
         <div class="menu__section" id="appetizer">
           <ul class="section">
-            <li>
-              <p class="menu__title">Soups</p>
-            </li>
+            <li><p class="menu__title">Soups</p></li>
             <li class="menu__item">
               <p class="item__name">
                 Miso Soup <span class="item__price">2.5</span>
@@ -262,9 +273,7 @@
             </li>
           </ul>
           <ul class="section">
-            <li>
-              <p class="menu__title">Salads</p>
-            </li>
+            <li><p class="menu__title">Salads</p></li>
             <li class="menu__item">
               <p class="item__name">
                 House Green Salad <span class="item__price">3.5</span>
@@ -333,9 +342,7 @@
             </li>
           </ul>
           <ul class="section">
-            <li>
-              <p class="menu__title">Sushi Bar Appetizers</p>
-            </li>
+            <li><p class="menu__title">Sushi Bar Appetizers</p></li>
             <li class="menu__item">
               <p class="item__name">
                 Tako Sunomono <span class="item__price">9</span>
@@ -427,9 +434,7 @@
             </li>
           </ul>
           <ul class="section">
-            <li>
-              <p class="menu__title">Appetizers</p>
-            </li>
+            <li><p class="menu__title">Appetizers</p></li>
             <li class="menu__item">
               <p class="item__name">
                 Harumaki <span class="item__price">5</span>
@@ -1171,285 +1176,387 @@
             </li>
           </ul>
         </div>
-        <div class="menu__section" id="chefs">
+        <div class="menu__section oneCol" id="chefs">
           <ul class="section">
-            <li>
-              <p class="menu__title">Special Appetizers</p>
-            </li>
+            <li><p class="menu__title">Special Appetizers</p></li>
             <li class="menu__item">
-              <p class="item__name">Festival <span class="item__price">15</span></p>
-              <p class="item__desc">Thin slice of seared white tuna with carrot, bell pepper, seaweed, caviar, lemon, served with special vinegar sauce</p>
-            </li>
-            <li class="menu__item">
-              <p class="item__name">Kobe Beef Sushi
-                <span class="item__price">12</span>
+              <p class="item__name">
+                Festival <span class="item__price">15</span>
               </p>
-              <p class="item__desc">A single slice of slightly seared wagyu toro beef over sushi rice</p>
-            </li>
-            <li class="menu__item">
-              <p class="item__name">Fried Oyster Sushi <span class="item__price">10</span></p>
-              <p class="item__desc">Two fried oysters with avocado, caviar, and a touch of spicy sauce</p>
-            </li>
-            <li class="menu__item">
-              <p class="item__name">Fuji Fried
-                <span class="item__price">15</span>
+              <p class="item__desc">
+                Thin slice of seared white tuna with carrot, bell pepper,
+                seaweed, caviar, lemon, served with special vinegar sauce
               </p>
-              <p class="item__desc">Jumbo shrimp, grouper, and crab meat, and spicy sauce wrapped in soy paper</p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Okra Winfrey
-                <span class="item__price">6</span>
+              <p class="item__name">
+                Kobe Beef Sushi <span class="item__price">12</span>
               </p>
-              <p class="item__desc">Lightly fried okra stuffed with white fish and finished with fire cracker sauce</p>
+              <p class="item__desc">
+                A single slice of slightly seared wagyu toro beef over sushi
+                rice
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Tsuki Mayan
-                <span class="item__price">10</span>
+              <p class="item__name">
+                Fried Oyster Sushi <span class="item__price">10</span>
               </p>
-              <p class="item__desc">Sliced seared tuna with crispy seaweed topped with guacamole</p>
+              <p class="item__desc">
+                Two fried oysters with avocado, caviar, and a touch of spicy
+                sauce
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Baja Sushi
-                <span class="item__price">15</span>
+              <p class="item__name">
+                Fuji Fried <span class="item__price">15</span>
               </p>
-              <p class="item__desc">Lightly breaded fried sea bass or eggplant topped with guacamole</p>
+              <p class="item__desc">
+                Jumbo shrimp, grouper, and crab meat, and spicy sauce wrapped in
+                soy paper
+              </p>
+            </li>
+            <li class="menu__item">
+              <p class="item__name">
+                Okra Winfrey <span class="item__price">6</span>
+              </p>
+              <p class="item__desc">
+                Lightly fried okra stuffed with white fish and finished with
+                fire cracker sauce
+              </p>
+            </li>
+            <li class="menu__item">
+              <p class="item__name">
+                Tsuki Mayan <span class="item__price">10</span>
+              </p>
+              <p class="item__desc">
+                Sliced seared tuna with crispy seaweed topped with guacamole
+              </p>
+            </li>
+            <li class="menu__item">
+              <p class="item__name">
+                Baja Sushi <span class="item__price">15</span>
+              </p>
+              <p class="item__desc">
+                Lightly breaded fried sea bass or eggplant topped with guacamole
+              </p>
             </li>
           </ul>
           <ul class="section">
-            <li>
-              <p class="menu__title">Special Rolls</p>
-            </li>
+            <li><p class="menu__title">Special Rolls</p></li>
             <li class="menu__item">
-              <p class="item__name">Batman Roll
-                <span class="item__price">9.5</span>
+              <p class="item__name">
+                Batman Roll <span class="item__price">9.5</span>
               </p>
-              <p class="item__desc">Kani and avocado topped with tuna, salmon, and caviar</p>
-            </li>
-            <li class="menu__item">
-              <p class="item__name">Black Dragon Roll
-                <span class="item__price">14</span>
+              <p class="item__desc">
+                Kani and avocado topped with tuna, salmon, and caviar
               </p>
-              <p class="item__desc">Cooked scallop topped with avocado, eel, and black caviar</p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Bobby Roll
-                <span class="item__price">8.5</span>
+              <p class="item__name">
+                Black Dragon Roll <span class="item__price">14</span>
               </p>
-              <p class="item__desc">Tempura roll white fish, scallion, and avocado </p>
-            </li>
-            <li class="menu__item">
-              <p class="item__name">Buddy Roll
-                <span class="item__price">10</span>
+              <p class="item__desc">
+                Cooked scallop topped with avocado, eel, and black caviar
               </p>
-              <p class="item__desc">Shrimp tempura with avocado, rolled with white seaweed, and topped with spicy tuna and caviar</p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Kimono Roll
-                <span class="item__price">9</span>
+              <p class="item__name">
+                Bobby Roll <span class="item__price">8.5</span>
               </p>
-              <p class="item__desc">Tuna and salmon with mayo-wasabi sauce topped with caviar</p>
-            </li>
-            <li class="menu__item">
-              <p class="item__name">Charley Box
-                <span class="item__price">18</span>
+              <p class="item__desc">
+                Tempura roll white fish, scallion, and avocado
               </p>
-              <p class="item__desc">Layers of rice, spicy tempura eel and tuna, topped with bell peppers and a sweet sauce. Served with fried avocado topped with scallions and a house special sauce</p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Chef's Roll
-                <span class="item__price">9</span>
+              <p class="item__name">
+                Buddy Roll <span class="item__price">10</span>
+              </p>
+              <p class="item__desc">
+                Shrimp tempura with avocado, rolled with white seaweed, and
+                topped with spicy tuna and caviar
+              </p>
+            </li>
+            <li class="menu__item">
+              <p class="item__name">
+                Kimono Roll <span class="item__price">9</span>
+              </p>
+              <p class="item__desc">
+                Tuna and salmon with mayo-wasabi sauce topped with caviar
+              </p>
+            </li>
+            <li class="menu__item">
+              <p class="item__name">
+                Charley Box <span class="item__price">18</span>
+              </p>
+              <p class="item__desc">
+                Layers of rice, spicy tempura eel and tuna, topped with bell
+                peppers and a sweet sauce. Served with fried avocado topped with
+                scallions and a house special sauce
+              </p>
+            </li>
+            <li class="menu__item">
+              <p class="item__name">
+                Chef's Roll <span class="item__price">9</span>
               </p>
               <p class="item__desc">Eel and avocado topped with peanut sauce</p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Club Sandwich
-                <span class="item__price">20</span>
+              <p class="item__name">
+                Club Sandwich <span class="item__price">20</span>
               </p>
-              <p class="item__desc">Tuna, scallion, avocado, and spicy sauce contained within two colors of caviar</p>
+              <p class="item__desc">
+                Tuna, scallion, avocado, and spicy sauce contained within two
+                colors of caviar
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Crispy Dragon Roll
-                <span class="item__price">8</span>
+              <p class="item__name">
+                Crispy Dragon Roll <span class="item__price">8</span>
               </p>
               <p class="item__desc">Tempura roll with eel and avocado</p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Crunch Kanpuy Roll
-                <span class="item__price">6</span>
+              <p class="item__name">
+                Crunch Kanpuy Roll <span class="item__price">6</span>
               </p>
-              <p class="item__desc">Sweet dried squash, avocado, ohba, and tempura crumb</p>
+              <p class="item__desc">
+                Sweet dried squash, avocado, ohba, and tempura crumb
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Dragon Roll
-                <span class="item__price">11</span>
+              <p class="item__name">
+                Dragon Roll <span class="item__price">11</span>
               </p>
-              <p class="item__desc">Eel, cucumber, and masago rolled with avocado</p>
+              <p class="item__desc">
+                Eel, cucumber, and masago rolled with avocado
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Emerald Roll
-                <span class="item__price">18</span>
+              <p class="item__name">
+                Emerald Roll <span class="item__price">18</span>
               </p>
-              <p class="item__desc">Yellowtail and pickled wasabi, rolled with avocado and topped with seaweed</p>
+              <p class="item__desc">
+                Yellowtail and pickled wasabi, rolled with avocado and topped
+                with seaweed
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Dynamite Roll
-                <span class="item__price">9</span>
+              <p class="item__name">
+                Dynamite Roll <span class="item__price">9</span>
               </p>
-              <p class="item__desc">Tuna, yellowtail, and mayo-wasabi sauce, topped with caviar</p>
+              <p class="item__desc">
+                Tuna, yellowtail, and mayo-wasabi sauce, topped with caviar
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Fire Cracker Roll
-                <span class="item__price">18</span>
+              <p class="item__name">
+                Fire Cracker Roll <span class="item__price">18</span>
               </p>
-              <p class="item__desc">Tuna and cucumber topped with smoked salmon, special sauce, and red caviar</p>
+              <p class="item__desc">
+                Tuna and cucumber topped with smoked salmon, special sauce, and
+                red caviar
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Holiday Roll
-                <span class="item__price">13.5</span>
+              <p class="item__name">
+                Holiday Roll <span class="item__price">13.5</span>
               </p>
-              <p class="item__desc">Spicy tuna and avocado, topped with white fish, red caviar, and green caviar</p>
+              <p class="item__desc">
+                Spicy tuna and avocado, topped with white fish, red caviar, and
+                green caviar
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">In a Hurry Roll
-                <span class="item__price">18</span>
+              <p class="item__name">
+                In a Hurry Roll <span class="item__price">18</span>
               </p>
-              <p class="item__desc">Spicy tuna avocado inside, rolled with white seaweed and topped with white tuna and masago</p>
+              <p class="item__desc">
+                Spicy tuna avocado inside, rolled with white seaweed and topped
+                with white tuna and masago
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Joker Roll
-                <span class="item__price">15</span>
+              <p class="item__name">
+                Joker Roll <span class="item__price">15</span>
               </p>
-              <p class="item__desc">Crispy avocado inside topped with avocado, salmon, tuna, bell pepper, black caviar and sweet sauce, and placed on a bed of special sauce</p>
+              <p class="item__desc">
+                Crispy avocado inside topped with avocado, salmon, tuna, bell
+                pepper, black caviar and sweet sauce, and placed on a bed of
+                special sauce
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Lemon Roll
-                <span class="item__price">9</span>
+              <p class="item__name">
+                Lemon Roll <span class="item__price">9</span>
               </p>
-              <p class="item__desc">Salmon and cucumber with spicy sesame sauce topped with sliced lemon</p>
+              <p class="item__desc">
+                Salmon and cucumber with spicy sesame sauce topped with sliced
+                lemon
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Lobster Roll
-                <span class="item__price">13</span>
+              <p class="item__name">
+                Lobster Roll <span class="item__price">13</span>
               </p>
-              <p class="item__desc">Tempura lobster with avocado and carrots rolled in masago</p>
+              <p class="item__desc">
+                Tempura lobster with avocado and carrots rolled in masago
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Mexican Roll
-                <span class="item__price">6.25</span>
+              <p class="item__name">
+                Mexican Roll <span class="item__price">6.25</span>
               </p>
-              <p class="item__desc">Tempura shrimp with avocado and spicy sauce</p>
+              <p class="item__desc">
+                Tempura shrimp with avocado and spicy sauce
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">New Jersey Roll
-                <span class="item__price">10</span>
+              <p class="item__name">
+                New Jersey Roll <span class="item__price">10</span>
               </p>
-              <p class="item__desc">Avocado, salmon, caviar, and mayo rolled in white seaweed</p>
+              <p class="item__desc">
+                Avocado, salmon, caviar, and mayo rolled in white seaweed
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">New York Roll
-                <span class="item__price">8</span>
+              <p class="item__name">
+                New York Roll <span class="item__price">8</span>
               </p>
               <p class="item__desc">Salmon, avocado, caviar, and mayo</p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Phoenix Roll
-                <span class="item__price">8.5</span>
+              <p class="item__name">
+                Phoenix Roll <span class="item__price">8.5</span>
               </p>
-              <p class="item__desc">Tempura in spicy kani sauce topped with avocado</p>
+              <p class="item__desc">
+                Tempura in spicy kani sauce topped with avocado
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Pilla Roll
-                <span class="item__price">20</span>
+              <p class="item__name">
+                Pilla Roll <span class="item__price">20</span>
               </p>
-              <p class="item__desc">Tempura eel, King Crab, and asparagus rolled with soy paper, baked shrimp, King Crab, shaved bell pepper and avocado</p>
+              <p class="item__desc">
+                Tempura eel, King Crab, and asparagus rolled with soy paper,
+                baked shrimp, King Crab, shaved bell pepper and avocado
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Rainbow Roll
-                <span class="item__price">15</span>
+              <p class="item__name">
+                Rainbow Roll <span class="item__price">15</span>
               </p>
-              <p class="item__desc">Tuna topped with avocado, tuna, salmon, and white fish</p>
+              <p class="item__desc">
+                Tuna topped with avocado, tuna, salmon, and white fish
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Snow Crab Cake
-                <span class="item__price">12.5</span>
+              <p class="item__name">
+                Snow Crab Cake <span class="item__price">12.5</span>
               </p>
-              <p class="item__desc">Snow crab and avocado mixed with mayo topped with tri-color caviar</p>
+              <p class="item__desc">
+                Snow crab and avocado mixed with mayo topped with tri-color
+                caviar
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Snow White Roll
-                <span class="item__price">16</span>
+              <p class="item__name">
+                Snow White Roll <span class="item__price">16</span>
               </p>
-              <p class="item__desc">Tempura red snapper, asparagus, avocado, and carrots wrapped in rice paper on a bed of special sauce</p>
+              <p class="item__desc">
+                Tempura red snapper, asparagus, avocado, and carrots wrapped in
+                rice paper on a bed of special sauce
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Summer Roll
-                <span class="item__price">12</span>
+              <p class="item__name">
+                Summer Roll <span class="item__price">12</span>
               </p>
-              <p class="item__desc">Yellowtail, cucumber, and scallion topped with tuna, scallion and a sprinkle of dried pepper</p>
+              <p class="item__desc">
+                Yellowtail, cucumber, and scallion topped with tuna, scallion
+                and a sprinkle of dried pepper
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Sunset Roll
-                <span class="item__price">12</span>
+              <p class="item__name">
+                Sunset Roll <span class="item__price">12</span>
               </p>
-              <p class="item__desc">Tuna, avocado, and a spicy sauce rolled with a spicy crumb</p>
+              <p class="item__desc">
+                Tuna, avocado, and a spicy sauce rolled with a spicy crumb
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Superman Roll
-                <span class="item__price">9</span>
+              <p class="item__name">
+                Superman Roll <span class="item__price">9</span>
               </p>
-              <p class="item__desc">Salmon, cucumber, and spicy sesame sauce topped with caviar</p>
+              <p class="item__desc">
+                Salmon, cucumber, and spicy sesame sauce topped with caviar
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Tampa Roll
-                <span class="item__price">10</span>
+              <p class="item__name">
+                Tampa Roll <span class="item__price">10</span>
               </p>
-              <p class="item__desc">Tempura white fish, avocado, carrot, spicy sauce, white seaweed</p>
+              <p class="item__desc">
+                Tempura white fish, avocado, carrot, spicy sauce, white seaweed
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Tool Box
-                <span class="item__price">18</span>
+              <p class="item__name">
+                Tool Box <span class="item__price">18</span>
               </p>
-              <p class="item__desc">Tempura shrimp with spicy sauce topped with eel and avocado pressed into a box</p>
+              <p class="item__desc">
+                Tempura shrimp with spicy sauce topped with eel and avocado
+                pressed into a box
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Tsuki Roll
-                <span class="item__price">9.5</span>
+              <p class="item__name">
+                Tsuki Roll <span class="item__price">9.5</span>
               </p>
-              <p class="item__desc">Kani and avocado topped with tuna, scallion, ponzu sauce, and bonito flakes</p>
+              <p class="item__desc">
+                Kani and avocado topped with tuna, scallion, ponzu sauce, and
+                bonito flakes
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Sunrise Roll
-                <span class="item__price">12</span>
+              <p class="item__name">
+                Sunrise Roll <span class="item__price">12</span>
               </p>
-              <p class="item__desc">Spicy tempura crumb inside topped with tuna and avocado</p>
+              <p class="item__desc">
+                Spicy tempura crumb inside topped with tuna and avocado
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Vege Phoenix Roll
-                <span class="item__price">8</span>
+              <p class="item__name">
+                Vege Phoenix Roll <span class="item__price">8</span>
               </p>
-              <p class="item__desc">Cucumber, bell pepper, tempura asparagus, and spicy sauce topped with avocado</p>
+              <p class="item__desc">
+                Cucumber, bell pepper, tempura asparagus, and spicy sauce topped
+                with avocado
+              </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Zebra Roll
-                <span class="item__price">16</span>
+              <p class="item__name">
+                Zebra Roll <span class="item__price">16</span>
               </p>
-              <p class="item__desc">Tuna, cucumber, and spicy sauce topped with avocado, shrimp, carrot, tempura crumb and a special sauce</p>
+              <p class="item__desc">
+                Tuna, cucumber, and spicy sauce topped with avocado, shrimp,
+                carrot, tempura crumb and a special sauce
+              </p>
             </li>
           </ul>
         </div>
-        <div class="menu__section" id="dessert">
+        <div class="menu__section oneCol" id="dessert">
           <ul class="section">
-            <li>
-              <p class="menu__title">Desserts</p>
-            </li>
+            <li><p class="menu__title">Desserts</p></li>
             <li class="menu__item">
-              <p class="item__name">Fried Banana
-                <span class="item__price">5.25</span>
+              <p class="item__name">
+                Fried Banana <span class="item__price">5.25</span>
               </p>
             </li>
             <li class="menu__item">
-              <p class="item__name">Fried Ice Cream
-                <span class="item__price">5.5</span>
+              <p class="item__name">
+                Fried Ice Cream <span class="item__price">5.5</span>
               </p>
               <ul class="item__submenu">
                 <li class="submenu__item">Green Tea</li>
@@ -1458,8 +1565,8 @@
               </ul>
             </li>
             <li class="menu__item">
-              <p class="item__name">Ice Cream
-                <span class="item__price">3.5</span>
+              <p class="item__name">
+                Ice Cream <span class="item__price">3.5</span>
               </p>
               <ul class="item__submenu">
                 <li class="submenu__item">Green Tea</li>
@@ -1468,8 +1575,8 @@
               </ul>
             </li>
             <li class="menu__item">
-              <p class="item__name">Mochi Ice Cream
-                <span class="item__price">3</span>
+              <p class="item__name">
+                Mochi Ice Cream <span class="item__price">3</span>
               </p>
               <ul class="item__submenu">
                 <li class="submenu__item">Mango</li>
