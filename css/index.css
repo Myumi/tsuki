@@ -25,6 +25,7 @@ body {
   font-family: var(--main-font);
   background-color: var(--background-color);
   font-size: 16px;
+  overflow-x: hidden;
 }
 a,
 a:active {
@@ -42,9 +43,8 @@ h1, h2, h3, h4 {
 }
 #alert {
   width: 100%;
-  height: 1.3rem;
   text-align: center;
-  padding-top: 0.2rem;
+  padding: 0.2rem 0.2rem;
   color: white;
   background-color: red;
   margin: 0;
@@ -263,6 +263,17 @@ h1, h2, h3, h4 {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/* temp */
+.nav__hours{
+  margin: auto;
+  list-style: none;
+  font-size: 1rem;
+  padding: 0 4.5rem 0 1rem;
+}
+.nav__hours span{
+  float: right;
 }
 
 @media only screen and (min-width: 740px) {

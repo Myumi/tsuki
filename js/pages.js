@@ -26,11 +26,10 @@ document.onreadystatechange = function() {
       const slides = document.querySelectorAll(".img__slideshow");
       for (let item of slides) {
         item.classList.add("invisible");
-        item.classList.remove("visible");
+        item.classList.remove("visible", "fade");
       }
       slides[slideIndex].classList.remove("invisible");
-      slides[slideIndex].classList.add("visible");
-      slides[slideIndex].classList.add("fade");
+      slides[slideIndex].classList.add("visible", "fade");
       slideIndex + 1 > slides.length - 1 ? (slideIndex = 0) : slideIndex++;
     }
     setInterval(slideshow, 2500);
@@ -79,7 +78,5 @@ document.onreadystatechange = function() {
   }
 };
 
-//hours & facebook link should be on main page
-//make image slideshow fade in
-//make nav buttons show pages / remove nav buttons?
-//add info on bottom
+//add nav button funtionality
+//add nav button animations
