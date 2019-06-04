@@ -5,14 +5,14 @@ document.onreadystatechange = function() {
     document.querySelector("#nav__menu").classList.toggle("invisible");
     //display nav menu
     document
-      .getElementsByClassName("title__icon")[0]
+      .querySelectorAll(".title__icon")[0]
       .addEventListener("click", function() {
         //display menu or remove menu
         document.querySelector("#nav__menu").classList.toggle("invisible");
       });
 
     //show pages from nav item click
-    document.getElementById("nav__menu").getElementsByTagName("li");
+    document.querySelector("#nav__menu").getElementsByTagName("li");
     // .addEventListener("click", showPage);
 
     function showPage(event) {
@@ -23,19 +23,21 @@ document.onreadystatechange = function() {
     let slideIndex = 0;
     slideshow();
     function slideshow() {
-      const slides = document.getElementsByClassName("img__slideshow");
+      const slides = document.querySelectorAll(".img__slideshow");
       for (let item of slides) {
         item.classList.add("invisible");
+        item.classList.remove("visible");
       }
       slides[slideIndex].classList.remove("invisible");
+      slides[slideIndex].classList.add("visible");
       slideIndex + 1 > slides.length - 1 ? (slideIndex = 0) : slideIndex++;
     }
-    // setInterval(slideshow, 2500);
+    setInterval(slideshow, 2500);
 
     //menu buttons
     openMenu("lunch");
     openDinnerMenu("appetizer");
-    const menuButtons = document.getElementsByClassName("menu__button");
+    const menuButtons = document.querySelectorAll(".menu__button");
     for (let item of menuButtons) {
       if (item.parentElement.classList[0] === "menu__buttons") {
         item.addEventListener("click", function() {
@@ -48,37 +50,35 @@ document.onreadystatechange = function() {
       }
     }
     function openMenu(menu) {
-      const menus = document.getElementsByClassName("menu");
+      const menus = document.querySelectorAll(".menu");
       for (let item of menus) {
         item.classList.add("invisible");
         document
-          .getElementById("button__" + item.id)
+          .querySelector("#button__" + item.id)
           .classList.remove("active__button");
       }
-      document.getElementById(menu).classList.remove("invisible");
+      document.querySelector("#"+menu).classList.remove("invisible");
       document
-        .getElementById("button__" + menu)
+        .querySelector("#button__" + menu)
         .classList.add("active__button");
     }
     function openDinnerMenu(menu) {
-      const sections = document.getElementsByClassName("menu__section");
+      const sections = document.querySelectorAll(".menu__section");
       for (let item of sections) {
         item.classList.add("invisible");
         document
-          .getElementById("button__" + item.id)
+          .querySelector("#button__" + item.id)
           .classList.remove("active__button");
       }
-      document.getElementById(menu).classList.remove("invisible");
+      document.querySelector("#"+menu).classList.remove("invisible");
       document
-        .getElementById("button__" + menu)
+        .querySelector("#button__" + menu)
         .classList.add("active__button");
     }
   }
 };
 
 //hours & facebook link should be on main page
-//make image a slideshow same size
 //make image slideshow fade in
 //make nav buttons show pages / remove nav buttons?
 //add info on bottom
-//desserts and chef's specials should be one column
