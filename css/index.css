@@ -116,8 +116,10 @@ h1, h2, h3, h4 {
   border-radius: 25px;
   cursor: pointer;
   font-size: 1.5rem;
+  positin: relative;
   margin-top: -20px;
   border: none;
+  z-index: 2;
 }
 #tablet__button{
   display: none;
@@ -152,17 +154,14 @@ h1, h2, h3, h4 {
 .menu__nav li:hover {
   background-color: var(--menu-nav-button-hover);
 }
-.lunch__menu{
-  columns: 2 250px;
-  column-gap: 3.2rem;
+.lunch__menu, .dinner__menu{
   list-style: none;
   padding: 0.5rem 2rem 2rem 2rem;
   margin: 0;
 }
-.dinner__menu{
-  list-style: none;
-  padding: 0.5rem 2rem 2rem 2rem;
-  margin: 0;
+.lunch__menu{
+  columns: 2 250px;
+  column-gap: 3.2rem;
 }
 .menu__section{
   columns: 2 250px;
@@ -255,6 +254,15 @@ h1, h2, h3, h4 {
 }
 .visible{
   display: block;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 @media only screen and (min-width: 740px) {

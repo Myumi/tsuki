@@ -30,6 +30,7 @@ document.onreadystatechange = function() {
       }
       slides[slideIndex].classList.remove("invisible");
       slides[slideIndex].classList.add("visible");
+      slides[slideIndex].classList.add("fade");
       slideIndex + 1 > slides.length - 1 ? (slideIndex = 0) : slideIndex++;
     }
     setInterval(slideshow, 2500);
